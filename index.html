@@ -1,0 +1,1548 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>白袜女生_生活方式影像品牌,记录日常穿搭与真实生活</title>
+<meta name="description" content="白袜女生官方网站，专注日常穿搭、生活方式与城市探索的原创影像社区，以品牌视角记录每一个真实而温暖的日常瞬间。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f4f7fb'/%3E%3Cpath d='M20 44c0-10 4-18 12-18s12 8 12 18' fill='none' stroke='%234a6fa5' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='32' cy='20' r='6' fill='%23e88b8b'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ws-ink:#22303f;
+  --ws-ink-soft:#5b6b7c;
+  --ws-line:#dfe7f0;
+  --ws-paper:#f4f7fb;
+  --ws-white:#ffffff;
+  --ws-blue:#4a6fa5;
+  --ws-blue-deep:#33507a;
+  --ws-mint:#7fb2a8;
+  --ws-coral:#e88b8b;
+  --ws-sand:#f0e6d8;
+  --ws-shadow:0 10px 30px rgba(34,48,63,.10);
+  --ws-radius:16px;
+  --ws-max:1180px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:112px}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  color:var(--ws-ink);
+  background:var(--ws-paper);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+ul{list-style:none}
+.ws-wrap{max-width:var(--ws-max);margin:0 auto;padding:0 24px}
+.ws-btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:11px 22px;border-radius:999px;font-size:14px;font-weight:600;
+  background:var(--ws-blue);color:#fff;transition:.25s ease;
+}
+.ws-btn:hover{background:var(--ws-blue-deep);transform:translateY(-2px)}
+.ws-btn--ghost{background:transparent;color:var(--ws-blue);border:1.5px solid var(--ws-blue)}
+.ws-btn--ghost:hover{background:rgba(74,111,165,.08);color:var(--ws-blue-deep)}
+.ws-btn--soft{background:var(--ws-sand);color:var(--ws-ink)}
+.ws-btn--soft:hover{background:#e6d8c4}
+
+/* ========== 公告条 + 页头 吸顶 ========== */
+.ws-sticky{
+  position:sticky;top:0;z-index:80;
+}
+.ws-notice{
+  background:linear-gradient(90deg,#33507a,#4a6fa5 55%,#6a8fbf);
+  color:#eaf1fa;font-size:13px;
+}
+.ws-notice__inner{
+  max-width:var(--ws-max);margin:0 auto;padding:8px 24px;
+  display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+}
+.ws-notice__tag{
+  background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);
+  font-size:11px;letter-spacing:.05em;padding:1px 8px;border-radius:999px;white-space:nowrap;
+}
+.ws-notice__track{flex:1;min-width:200px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.ws-notice__track b{color:#fff;font-weight:600}
+.ws-notice__link{color:#fff;font-size:12px;border-bottom:1px dashed rgba(255,255,255,.6);white-space:nowrap}
+.ws-header{
+  background:rgba(255,255,255,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--ws-line);
+  box-shadow:0 2px 14px rgba(34,48,63,.05);
+}
+.ws-header__inner{
+  max-width:var(--ws-max);margin:0 auto;padding:12px 24px;
+  display:flex;align-items:center;gap:20px;
+}
+.ws-logo{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.ws-logo__mark{
+  width:40px;height:40px;border-radius:12px;background:linear-gradient(140deg,#4a6fa5,#7fb2a8);
+  display:grid;place-items:center;color:#fff;font-weight:700;font-size:18px;letter-spacing:.05em;
+  box-shadow:inset 0 -3px 8px rgba(0,0,0,.12);
+}
+.ws-logo__text{display:flex;flex-direction:column;line-height:1.15}
+.ws-logo__name{font-size:17px;font-weight:700;letter-spacing:.02em}
+.ws-logo__sub{font-size:10.5px;color:var(--ws-ink-soft);letter-spacing:.18em}
+.ws-nav{display:flex;gap:4px;flex-wrap:wrap;margin-left:8px}
+.ws-nav a{
+  padding:8px 13px;border-radius:999px;font-size:14px;color:var(--ws-ink-soft);
+  transition:.2s;font-weight:500;
+}
+.ws-nav a:hover{background:#edf2f9;color:var(--ws-blue-deep)}
+.ws-nav a.is-active{background:var(--ws-blue);color:#fff}
+.ws-header__tools{margin-left:auto;display:flex;align-items:center;gap:10px}
+.ws-search{
+  display:flex;align-items:center;gap:6px;background:#eef3f9;
+  border:1px solid transparent;border-radius:999px;padding:6px 8px 6px 14px;
+  transition:.25s;
+}
+.ws-search:focus-within{border-color:var(--ws-blue);background:#fff;box-shadow:0 0 0 4px rgba(74,111,165,.12)}
+.ws-search input{
+  border:none;background:transparent;outline:none;width:132px;font-size:13.5px;color:var(--ws-ink);
+}
+.ws-search button{
+  background:var(--ws-blue);color:#fff;border-radius:999px;width:28px;height:28px;
+  display:grid;place-items:center;font-size:13px;transition:.2s;
+}
+.ws-search button:hover{background:var(--ws-blue-deep)}
+.ws-burger{
+  display:none;width:40px;height:40px;border-radius:10px;background:#eef3f9;
+  font-size:18px;color:var(--ws-blue-deep);
+}
+.ws-searchhint{
+  display:none;font-size:12px;color:var(--ws-coral);position:absolute;margin-top:64px;
+  background:#fff;border:1px solid var(--ws-line);border-radius:10px;padding:6px 12px;box-shadow:var(--ws-shadow);
+}
+.ws-searchhint.is-show{display:block;animation:wsFade .3s ease}
+@keyframes wsFade{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+
+/* ========== 首屏 ========== */
+.ws-hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(900px 420px at 82% -10%,rgba(127,178,168,.28),transparent 65%),
+    radial-gradient(700px 400px at -8% 20%,rgba(232,139,139,.16),transparent 60%),
+    linear-gradient(180deg,#f8fbfe,#eef3f9);
+  padding:56px 0 66px;
+}
+.ws-hero__grid{
+  display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center;
+}
+.ws-hero__badge{
+  display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--ws-line);
+  border-radius:999px;padding:5px 14px;font-size:12.5px;color:var(--ws-blue-deep);font-weight:600;
+  box-shadow:0 4px 14px rgba(34,48,63,.06);
+}
+.ws-hero__badge i{width:7px;height:7px;border-radius:50%;background:var(--ws-mint);display:inline-block}
+h1.ws-hero__title{
+  font-size:clamp(38px,5.4vw,62px);line-height:1.12;letter-spacing:.01em;margin:18px 0 6px;
+}
+h1.ws-hero__title em{
+  font-style:normal;color:var(--ws-blue);
+  background:linear-gradient(transparent 62%,rgba(127,178,168,.35) 62%);
+}
+.ws-hero__slogan{font-size:19px;font-weight:600;color:var(--ws-ink-soft);margin-bottom:16px}
+.ws-hero__intro{font-size:15px;color:var(--ws-ink-soft);max-width:560px}
+.ws-hero__intro strong{color:var(--ws-ink)}
+.ws-hero__actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.ws-hero__stats{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px;max-width:520px;
+}
+.ws-stat{
+  background:#fff;border:1px solid var(--ws-line);border-radius:14px;padding:14px 16px;
+  box-shadow:0 6px 18px rgba(34,48,63,.05);
+}
+.ws-stat b{display:block;font-size:24px;color:var(--ws-blue-deep);line-height:1.2}
+.ws-stat span{font-size:12.5px;color:var(--ws-ink-soft)}
+.ws-hero__visual{position:relative}
+.ws-hero__figure{
+  border-radius:22px;overflow:hidden;box-shadow:var(--ws-shadow);
+  border:6px solid #fff;transform:rotate(1.2deg);
+}
+.ws-hero__figure img{width:100%;height:auto}
+.ws-hero__float{
+  position:absolute;left:-16px;bottom:26px;background:#fff;border-radius:14px;
+  padding:12px 16px;box-shadow:0 12px 30px rgba(34,48,63,.16);display:flex;gap:10px;align-items:center;
+  animation:wsFloat 5s ease-in-out infinite;
+}
+@keyframes wsFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.ws-hero__float span{font-size:12px;color:var(--ws-ink-soft)}
+.ws-hero__float b{display:block;font-size:14px;color:var(--ws-ink)}
+.ws-hero__chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}
+.ws-chip{
+  background:#fff;border:1px solid var(--ws-line);border-radius:999px;
+  padding:5px 13px;font-size:12.5px;color:var(--ws-ink-soft);transition:.2s;cursor:pointer;
+}
+.ws-chip:hover{border-color:var(--ws-blue);color:var(--ws-blue-deep);background:#eef3f9}
+.ws-chip.is-on{background:var(--ws-blue);color:#fff;border-color:var(--ws-blue)}
+
+/* ========== 通用 section ========== */
+.ws-section{padding:64px 0}
+.ws-section--alt{background:#fff}
+.ws-sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;margin-bottom:30px;flex-wrap:wrap}
+.ws-sec-head__left{max-width:640px}
+.ws-kicker{
+  font-size:12px;letter-spacing:.22em;color:var(--ws-mint);font-weight:700;text-transform:uppercase;
+}
+h2.ws-sec-title{font-size:clamp(24px,3vw,32px);line-height:1.3;margin:8px 0 6px}
+.ws-sec-desc{font-size:14.5px;color:var(--ws-ink-soft)}
+.ws-sec-more{font-size:14px;color:var(--ws-blue);font-weight:600;white-space:nowrap}
+.ws-sec-more:hover{color:var(--ws-blue-deep)}
+
+/* ========== 焦点内容 ========== */
+.ws-focus{display:grid;grid-template-columns:1.35fr 1fr;gap:22px}
+.ws-focus__main{position:relative;border-radius:var(--ws-radius);overflow:hidden;box-shadow:var(--ws-shadow);background:#000}
+.ws-focus__main img{width:100%;height:100%;object-fit:cover;aspect-ratio:16/10;transition:.5s}
+.ws-focus__main:hover img{transform:scale(1.04)}
+.ws-focus__cap{
+  position:absolute;inset:auto 0 0 0;padding:26px 24px 22px;color:#fff;
+  background:linear-gradient(transparent,rgba(20,30,42,.86));
+}
+.ws-focus__cap h3{font-size:22px;margin-bottom:8px}
+.ws-focus__cap p{font-size:13.5px;opacity:.86}
+.ws-focus__meta{display:flex;gap:12px;font-size:12px;opacity:.8;margin-top:10px;flex-wrap:wrap}
+.ws-focus__list{display:grid;gap:14px}
+.ws-focus__item{
+  display:grid;grid-template-columns:112px 1fr;gap:14px;background:#fff;border:1px solid var(--ws-line);
+  border-radius:14px;overflow:hidden;transition:.25s;align-items:center;
+}
+.ws-focus__item:hover{box-shadow:var(--ws-shadow);transform:translateY(-3px);border-color:#c9d8ea}
+.ws-focus__item img{width:112px;height:86px;object-fit:cover}
+.ws-focus__item-body{padding:6px 12px 8px 0}
+.ws-focus__item-body h4{font-size:14.5px;line-height:1.45;margin-bottom:4px}
+.ws-focus__item-body span{font-size:12px;color:var(--ws-ink-soft)}
+
+/* ========== 视频流卡片 ========== */
+.ws-video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.ws-card{
+  background:#fff;border:1px solid var(--ws-line);border-radius:var(--ws-radius);overflow:hidden;
+  display:flex;flex-direction:column;transition:.3s cubic-bezier(.2,.7,.3,1);
+}
+.ws-card:hover{transform:translateY(-6px);box-shadow:var(--ws-shadow);border-color:#c9d8ea}
+.ws-card__cover{position:relative;overflow:hidden}
+.ws-card__cover img{width:100%;aspect-ratio:16/9;object-fit:cover;transition:.5s}
+.ws-card:hover .ws-card__cover img{transform:scale(1.05)}
+.ws-card__tag{
+  position:absolute;top:10px;left:10px;font-size:11px;padding:2px 9px;border-radius:999px;
+  background:rgba(255,255,255,.9);color:var(--ws-blue-deep);font-weight:600;
+}
+.ws-card__time{
+  position:absolute;bottom:10px;right:10px;font-size:11px;padding:1px 8px;border-radius:6px;
+  background:rgba(15,23,32,.7);color:#fff;
+}
+.ws-card__play{
+  position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) scale(.8);
+  width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.92);color:var(--ws-blue-deep);
+  display:grid;place-items:center;font-size:15px;opacity:0;transition:.3s;
+  box-shadow:0 6px 18px rgba(0,0,0,.2);
+}
+.ws-card:hover .ws-card__play{opacity:1;transform:translate(-50%,-50%) scale(1)}
+.ws-card__body{padding:15px 16px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.ws-card__body h3{font-size:16px;line-height:1.5}
+.ws-card__body p{font-size:13px;color:var(--ws-ink-soft);flex:1}
+.ws-card__author{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--ws-ink-soft)}
+.ws-avatar{
+  width:26px;height:26px;border-radius:50%;display:grid;place-items:center;
+  color:#fff;font-size:11.5px;font-weight:700;flex-shrink:0;
+}
+.ws-card__foot{
+  display:flex;align-items:center;gap:8px;border-top:1px dashed var(--ws-line);padding-top:10px;
+  font-size:12.5px;color:var(--ws-ink-soft);
+}
+.ws-act{
+  display:inline-flex;align-items:center;gap:4px;padding:3px 8px;border-radius:999px;transition:.2s;
+}
+.ws-act:hover{background:#eef3f9;color:var(--ws-blue-deep)}
+.ws-act.is-on{color:var(--ws-coral);font-weight:600}
+.ws-act.is-on .ws-act__icon{transform:scale(1.14)}
+.ws-act__icon{display:inline-block;transition:.2s}
+
+/* ========== 专题 ========== */
+.ws-topics{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.ws-topic{
+  position:relative;border-radius:14px;overflow:hidden;min-height:220px;display:flex;align-items:flex-end;
+  color:#fff;box-shadow:0 6px 18px rgba(34,48,63,.08);transition:.3s;
+}
+.ws-topic:hover{transform:translateY(-5px);box-shadow:var(--ws-shadow)}
+.ws-topic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:.5s}
+.ws-topic:hover img{transform:scale(1.07)}
+.ws-topic__body{
+  position:relative;padding:18px;background:linear-gradient(transparent,rgba(18,28,40,.88));width:100%;
+}
+.ws-topic__body h3{font-size:16px;margin-bottom:4px}
+.ws-topic__body p{font-size:12.5px;opacity:.85}
+.ws-topic__state{
+  display:inline-block;margin-top:8px;font-size:11px;padding:1px 9px;border-radius:999px;
+  background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.4);
+}
+
+/* ========== 创作者 ========== */
+.ws-creators{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.ws-creator{
+  background:#fff;border:1px solid var(--ws-line);border-radius:16px;padding:22px 18px;text-align:center;
+  transition:.3s;cursor:pointer;
+}
+.ws-creator:hover{transform:translateY(-6px);box-shadow:var(--ws-shadow);border-color:#c9d8ea}
+.ws-creator__ava{
+  width:64px;height:64px;border-radius:50%;margin:0 auto 12px;display:grid;place-items:center;
+  font-size:22px;font-weight:700;color:#fff;box-shadow:0 8px 18px rgba(34,48,63,.16);
+}
+.ws-creator h3{font-size:16px;margin-bottom:2px}
+.ws-creator__field{font-size:12px;color:var(--ws-mint);font-weight:600;letter-spacing:.05em}
+.ws-creator p{font-size:12.5px;color:var(--ws-ink-soft);margin:10px 0 12px;min-height:56px}
+.ws-creator__nums{display:flex;justify-content:center;gap:16px;font-size:12px;color:var(--ws-ink-soft);border-top:1px dashed var(--ws-line);padding-top:10px}
+.ws-creator__nums b{display:block;color:var(--ws-ink);font-size:14px}
+
+/* ========== 故事随笔 ========== */
+.ws-stories{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.ws-story{
+  background:#fff;border:1px solid var(--ws-line);border-radius:14px;padding:24px 22px;
+  border-top:4px solid var(--ws-mint);transition:.25s;
+}
+.ws-story:nth-child(2){border-top-color:var(--ws-coral)}
+.ws-story:nth-child(3){border-top-color:var(--ws-blue)}
+.ws-story:hover{box-shadow:var(--ws-shadow);transform:translateY(-4px)}
+.ws-story h3{font-size:17px;margin-bottom:10px}
+.ws-story p{font-size:13.5px;color:var(--ws-ink-soft)}
+.ws-story__by{display:flex;align-items:center;gap:8px;margin-top:16px;font-size:12px;color:var(--ws-ink-soft)}
+
+/* ========== 影像墙 ========== */
+.ws-wall{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:120px;gap:14px}
+.ws-wall figure{position:relative;border-radius:12px;overflow:hidden;box-shadow:0 4px 14px rgba(34,48,63,.07)}
+.ws-wall img{width:100%;height:100%;object-fit:cover;transition:.5s}
+.ws-wall figure:hover img{transform:scale(1.08)}
+.ws-wall figcaption{
+  position:absolute;inset:auto 0 0 0;padding:10px 12px;color:#fff;font-size:12px;
+  background:linear-gradient(transparent,rgba(18,28,40,.8));opacity:0;transition:.3s;
+}
+.ws-wall figure:hover figcaption{opacity:1}
+.ws-wall .ws-wall--big{grid-column:span 2;grid-row:span 2}
+.ws-wall .ws-wall--tall{grid-row:span 2}
+
+/* ========== 评价 ========== */
+.ws-reviews{columns:3;column-gap:18px}
+.ws-review{
+  break-inside:avoid;background:#fff;border:1px solid var(--ws-line);border-radius:14px;
+  padding:18px 20px;margin-bottom:18px;transition:.25s;
+}
+.ws-review:hover{box-shadow:var(--ws-shadow);border-color:#c9d8ea}
+.ws-review__head{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.ws-review__head b{font-size:13.5px}
+.ws-review__head span{font-size:11.5px;color:var(--ws-ink-soft)}
+.ws-review p{font-size:13.5px;color:var(--ws-ink-soft)}
+.ws-stars{color:#e8b34b;font-size:12px;letter-spacing:2px}
+
+/* ========== 深度解析 ========== */
+.ws-about{
+  display:grid;grid-template-columns:.85fr 1.15fr;gap:44px;align-items:start;
+}
+.ws-about__media{border-radius:18px;overflow:hidden;box-shadow:var(--ws-shadow);position:relative}
+.ws-about__media img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.ws-about__badge{
+  position:absolute;right:14px;top:14px;background:rgba(255,255,255,.94);border-radius:999px;
+  font-size:11.5px;padding:6px 13px;font-weight:600;color:var(--ws-blue-deep);
+}
+.ws-about__text{font-size:14.5px;color:var(--ws-ink-soft)}
+.ws-about__text h2{margin-bottom:14px}
+.ws-about__text p{margin-bottom:14px}
+.ws-about__text strong{color:var(--ws-ink)}
+.ws-points{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:22px}
+.ws-point{
+  background:#fff;border:1px solid var(--ws-line);border-radius:12px;padding:14px 16px;
+}
+.ws-point b{display:block;font-size:14px;color:var(--ws-blue-deep);margin-bottom:4px}
+.ws-point span{font-size:12.5px;color:var(--ws-ink-soft)}
+
+/* ========== 动态 ========== */
+.ws-news{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.ws-news__item{
+  display:grid;grid-template-columns:64px 1fr;gap:14px;background:#fff;border:1px solid var(--ws-line);
+  border-radius:14px;padding:16px 18px;transition:.25s;
+}
+.ws-news__item:hover{box-shadow:var(--ws-shadow);border-color:#c9d8ea}
+.ws-news__date{
+  background:linear-gradient(140deg,#eef3f9,#dce7f4);border-radius:10px;text-align:center;
+  padding:8px 0;height:fit-content;
+}
+.ws-news__date b{display:block;font-size:18px;color:var(--ws-blue-deep);line-height:1.1}
+.ws-news__date span{font-size:10.5px;color:var(--ws-ink-soft)}
+.ws-news__item h3{font-size:14.5px;margin-bottom:4px}
+.ws-news__item p{font-size:12.5px;color:var(--ws-ink-soft)}
+
+/* ========== FAQ ========== */
+.ws-faq{max-width:860px;margin:0 auto;display:grid;gap:12px}
+.ws-faq details{
+  background:#fff;border:1px solid var(--ws-line);border-radius:12px;padding:0 18px;transition:.25s;
+}
+.ws-faq details[open]{box-shadow:var(--ws-shadow);border-color:#c9d8ea}
+.ws-faq summary{
+  list-style:none;cursor:pointer;padding:16px 0;font-size:15px;font-weight:600;
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+}
+.ws-faq summary::-webkit-details-marker{display:none}
+.ws-faq summary::after{
+  content:"+";font-size:20px;color:var(--ws-blue);font-weight:400;transition:.25s;line-height:1;
+}
+.ws-faq details[open] summary::after{content:"−";transform:rotate(180deg)}
+.ws-faq p{font-size:13.5px;color:var(--ws-ink-soft);padding:0 0 16px}
+
+/* ========== 联系 CTA ========== */
+.ws-cta{
+  background:linear-gradient(120deg,#2c4566,#4a6fa5 60%,#5f9189);
+  border-radius:22px;padding:46px 40px;color:#fff;display:grid;grid-template-columns:1.2fr 1fr;
+  gap:30px;align-items:center;box-shadow:0 20px 44px rgba(44,69,102,.28);
+}
+.ws-cta h2{font-size:clamp(22px,2.6vw,30px);margin-bottom:10px}
+.ws-cta p{font-size:14px;opacity:.9}
+.ws-cta__actions{display:flex;gap:12px;flex-wrap:wrap;justify-content:flex-end}
+.ws-cta .ws-btn{background:#fff;color:var(--ws-blue-deep)}
+.ws-cta .ws-btn:hover{background:#eaf1fa}
+.ws-cta .ws-btn--ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}
+.ws-cta .ws-btn--ghost:hover{background:rgba(255,255,255,.14)}
+
+/* ========== 页脚 ========== */
+.ws-footer{background:#1e2c3c;color:#c3cfdd;padding:52px 0 0;font-size:13.5px}
+.ws-footer__grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:30px;padding-bottom:36px}
+.ws-footer h4{color:#fff;font-size:14.5px;margin-bottom:14px}
+.ws-footer li{margin-bottom:9px}
+.ws-footer a:hover{color:#fff}
+.ws-footer__brand p{font-size:12.5px;line-height:1.8;color:#9fb0c3;margin-top:12px}
+.ws-footer__brand .ws-logo__mark{background:linear-gradient(140deg,#5f7fa8,#7fb2a8)}
+.ws-footer__brand .ws-logo__name{color:#fff}
+.ws-footer__brand .ws-logo__sub{color:#8fa3b8}
+.ws-footer__bottom{
+  border-top:1px solid rgba(255,255,255,.1);padding:18px 0 26px;display:flex;justify-content:space-between;
+  gap:14px;flex-wrap:wrap;font-size:12px;color:#8fa3b8;
+}
+.ws-footer__bottom a{color:#a9bbcd}
+.ws-footer__bottom a:hover{color:#fff}
+
+/* ========== 弹窗 & Toast ========== */
+.ws-modal{
+  position:fixed;inset:0;z-index:120;display:none;align-items:center;justify-content:center;padding:20px;
+  background:rgba(20,30,42,.5);backdrop-filter:blur(4px);
+}
+.ws-modal.is-open{display:flex;animation:wsFade .25s ease}
+.ws-modal__box{
+  background:#fff;border-radius:18px;max-width:520px;width:100%;padding:28px 26px;box-shadow:0 30px 60px rgba(0,0,0,.28);
+  position:relative;max-height:86vh;overflow:auto;
+}
+.ws-modal__box h3{font-size:19px;margin-bottom:12px}
+.ws-modal__box p{font-size:14px;color:var(--ws-ink-soft);margin-bottom:14px}
+.ws-modal__close{
+  position:absolute;top:12px;right:14px;font-size:20px;color:var(--ws-ink-soft);line-height:1;
+}
+.ws-modal__close:hover{color:var(--ws-coral)}
+.ws-modal__list{display:grid;gap:10px;margin-bottom:16px}
+.ws-modal__list label{display:flex;gap:10px;align-items:flex-start;font-size:13.5px;color:var(--ws-ink-soft);cursor:pointer}
+.ws-modal__list input[type=radio]{margin-top:4px;accent-color:var(--ws-blue)}
+.ws-modal textarea{
+  width:100%;border:1px solid var(--ws-line);border-radius:10px;padding:10px 12px;font-family:inherit;
+  font-size:13.5px;resize:vertical;min-height:84px;outline:none;
+}
+.ws-modal textarea:focus{border-color:var(--ws-blue);box-shadow:0 0 0 3px rgba(74,111,165,.12)}
+.ws-form-row{display:grid;gap:10px;margin-bottom:14px}
+.ws-form-row input{
+  width:100%;border:1px solid var(--ws-line);border-radius:10px;padding:10px 12px;font-size:13.5px;
+  font-family:inherit;outline:none;
+}
+.ws-form-row input:focus{border-color:var(--ws-blue);box-shadow:0 0 0 3px rgba(74,111,165,.12)}
+.ws-modal__actions{display:flex;gap:10px;justify-content:flex-end;margin-top:6px}
+.ws-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);z-index:200;
+  background:#22303f;color:#fff;font-size:13.5px;padding:11px 22px;border-radius:999px;
+  opacity:0;pointer-events:none;transition:.3s;box-shadow:0 12px 30px rgba(0,0,0,.25);
+}
+.ws-toast.is-show{opacity:1;transform:translate(-50%,0)}
+.ws-totop{
+  position:fixed;right:22px;bottom:26px;z-index:90;width:44px;height:44px;border-radius:50%;
+  background:var(--ws-blue);color:#fff;display:grid;place-items:center;font-size:17px;
+  box-shadow:0 10px 24px rgba(74,111,165,.4);opacity:0;pointer-events:none;transition:.3s;
+}
+.ws-totop.is-show{opacity:1;pointer-events:auto}
+.ws-totop:hover{background:var(--ws-blue-deep);transform:translateY(-3px)}
+
+/* ========== 响应式 ========== */
+@media (max-width:1020px){
+  .ws-hero__grid{grid-template-columns:1fr;gap:32px}
+  .ws-hero__visual{order:-1;max-width:540px}
+  .ws-focus{grid-template-columns:1fr}
+  .ws-video-grid{grid-template-columns:repeat(2,1fr)}
+  .ws-topics{grid-template-columns:repeat(2,1fr)}
+  .ws-creators{grid-template-columns:repeat(2,1fr)}
+  .ws-stories{grid-template-columns:1fr}
+  .ws-reviews{columns:2}
+  .ws-about{grid-template-columns:1fr;gap:28px}
+  .ws-about__media{max-width:460px}
+  .ws-cta{grid-template-columns:1fr;padding:34px 26px}
+  .ws-cta__actions{justify-content:flex-start}
+  .ws-footer__grid{grid-template-columns:1fr 1fr}
+  .ws-wall{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:760px){
+  html{scroll-padding-top:104px}
+  .ws-nav{
+    display:none;position:absolute;left:0;right:0;top:100%;background:#fff;
+    flex-direction:column;padding:10px 16px 16px;border-bottom:1px solid var(--ws-line);
+    box-shadow:0 18px 30px rgba(34,48,63,.12);gap:2px;
+  }
+  .ws-nav.is-open{display:flex;animation:wsFade .25s ease}
+  .ws-nav a{padding:11px 14px;border-radius:10px}
+  .ws-header__inner{position:relative;flex-wrap:wrap}
+  .ws-burger{display:grid;place-items:center;margin-left:auto}
+  .ws-header__tools{margin-left:auto}
+  .ws-search input{width:104px}
+  .ws-section{padding:46px 0}
+  .ws-video-grid{grid-template-columns:1fr}
+  .ws-topics{grid-template-columns:1fr}
+  .ws-creators{grid-template-columns:1fr}
+  .ws-reviews{columns:1}
+  .ws-points{grid-template-columns:1fr}
+  .ws-news{grid-template-columns:1fr}
+  .ws-wall{grid-template-columns:repeat(2,1fr);grid-auto-rows:110px}
+  .ws-footer__grid{grid-template-columns:1fr}
+  .ws-hero__stats{grid-template-columns:1fr}
+  .ws-notice__inner{padding:7px 16px;font-size:12px}
+  .ws-hero__float{left:8px;bottom:10px;padding:8px 12px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- ===== 吸顶区：公告条 + 页头 ===== -->
+<div class="ws-sticky">
+  <div class="ws-notice" aria-label="站内公告">
+    <div class="ws-notice__inner">
+      <span class="ws-notice__tag">最新发布</span>
+      <span class="ws-notice__track"><b>《白袜女生的四季日常》第四季</b> 已上线，新增「通勤白袜搭配手记」与「周末城市漫步 Vlog」两组影像；创作者招募计划同步开启。</span>
+      <a class="ws-notice__link" href="#ws-news">查看更新</a>
+    </div>
+  </div>
+
+  <header class="ws-header">
+    <div class="ws-header__inner">
+      <a class="ws-logo" href="#ws-home" aria-label="白袜女生官方网站首页">
+        <span class="ws-logo__mark">白</span>
+        <span class="ws-logo__text">
+          <span class="ws-logo__name">白袜女生</span>
+          <span class="ws-logo__sub">OFFICIAL&nbsp;VIDEO</span>
+        </span>
+      </a>
+      <nav class="ws-nav" id="wsNav" aria-label="主导航">
+        <a href="#ws-home" class="is-active">首页</a>
+        <a href="#ws-focus">焦点影像</a>
+        <a href="#ws-videos">视频流</a>
+        <a href="#ws-creators">创作者</a>
+        <a href="#ws-story">品牌故事</a>
+        <a href="#ws-news">企业动态</a>
+        <a href="#ws-faq">帮助</a>
+        <a href="#ws-contact">联系</a>
+      </nav>
+      <div class="ws-header__tools">
+        <form class="ws-search" id="wsSearchForm" role="search" onsubmit="return false;">
+          <input type="search" id="wsSearchInput" placeholder="搜索白袜日常、穿搭、城市影像" aria-label="站内搜索">
+          <button type="submit" id="wsSearchBtn" aria-label="搜索">🔍</button>
+        </form>
+        <button class="ws-burger" id="wsBurger" aria-label="展开导航" aria-expanded="false">☰</button>
+      </div>
+      <div class="ws-searchhint" id="wsSearchHint" role="status"></div>
+    </div>
+  </header>
+</div>
+
+<!-- ===== 首屏 ===== -->
+<section class="ws-hero" id="ws-home">
+  <div class="ws-wrap">
+    <div class="ws-hero__grid">
+      <div class="ws-hero__left">
+        <span class="ws-hero__badge"><i></i>白袜女生 · 官方网站 · 品牌原创影像社区</span>
+        <h1 class="ws-hero__title"><em>白袜女生</em></h1>
+        <p class="ws-hero__slogan">用一双白袜的清爽，记录生活的松弛与认真</p>
+        <p class="ws-hero__intro">
+          白袜女生是深耕<strong>日常穿搭与生活方式影像</strong>的原创视频品牌，以企业级内容标准运营，为创作者与用户搭建高品质内容生态。
+          我们相信清爽、真实、有温度的日常值得被认真记录：从清晨的帆布鞋与棉袜，到傍晚下班路上的街灯与晚风，
+          每一段影像都由官方团队与签约创作者共同打磨。平台坚持正版高清出品，以匠心呈现城市探索、穿搭技巧、兴趣同好与治愈系生活片段，
+          让每一次点击都成为一次可信赖的陪伴。
+        </p>
+        <div class="ws-hero__actions">
+          <a class="ws-btn" href="#ws-videos">浏览本期精品内容</a>
+          <a class="ws-btn ws-btn--ghost" href="#ws-story">了解品牌故事</a>
+          <button class="ws-btn ws-btn--soft" id="wsSubmitBtn">我要投稿</button>
+        </div>
+        <div class="ws-hero__chips" aria-label="热门话题">
+          <span class="ws-chip is-on"># 白袜日常</span>
+          <span class="ws-chip"># 通勤穿搭</span>
+          <span class="ws-chip"># 城市漫步</span>
+          <span class="ws-chip"># 治愈影像</span>
+        </div>
+        <div class="ws-hero__stats">
+          <div class="ws-stat"><b data-count="1286">1286</b><span>累计原创影像作品</span></div>
+          <div class="ws-stat"><b data-count="92">92</b><span>签约合作创作者（位）</span></div>
+          <div class="ws-stat"><b data-count="41">41</b><span>城市影像计划覆盖城市</span></div>
+        </div>
+      </div>
+      <div class="ws-hero__visual">
+        <div class="ws-hero__figure">
+          <img alt="白袜女生官网首屏主视觉：清晨窗边的白袜与帆布鞋日常影像" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 480'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23eaf2fb'/%3E%3Cstop offset='1' stop-color='%23cfdfea'/%3E%3C/linearGradient%3E%3ClinearGradient id='g2' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23ffffff'/%3E%3Cstop offset='1' stop-color='%23e4ebf3'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='480' fill='url(%23g1)'/%3E%3Crect x='0' y='0' width='640' height='150' fill='%23f7fbff' opacity='0.7'/%3E%3Ccircle cx='520' cy='88' r='44' fill='%23f6e7c9' opacity='0.9'/%3E%3Crect x='76' y='220' width='488' height='18' rx='9' fill='%23b8c9dc'/%3E%3Cpath d='M130 238 Q190 190 250 238 L250 250 L130 250 Z' fill='%23ffffff'/%3E%3Cpath d='M150 238 Q190 206 232 238' stroke='%23c7d6e5' stroke-width='4' fill='none'/%3E%3Cpath d='M390 238 Q450 190 510 238 L510 250 L390 250 Z' fill='%23ffffff'/%3E%3Cpath d='M410 238 Q452 206 492 238' stroke='%23c7d6e5' stroke-width='4' fill='none'/%3E%3Crect x='170' y='252' width='40' height='96' rx='16' fill='url(%23g2)'/%3E%3Crect x='470' y='252' width='40' height='96' rx='16' fill='url(%23g2)'/%3E%3Crect x='176' y='286' width='28' height='10' fill='%234a6fa5' opacity='0.5'/%3E%3Crect x='476' y='286' width='28' height='10' fill='%23e88b8b' opacity='0.5'/%3E%3Crect x='328' y='250' width='14' height='110' rx='7' fill='%238fa8c0'/%3E%3Crect x='306' y='360' width='58' height='12' rx='6' fill='%23a9bccd'/%3E%3Cpath d='M0 380 L640 380 L640 480 L0 480 Z' fill='%23dfe8f1'/%3E%3Cpath d='M0 412 Q160 392 320 412 T640 412 L640 480 L0 480 Z' fill='%23cddaea'/%3E%3Ccircle cx='118' cy='150' r='6' fill='%23a9c9c2'/%3E%3Ccircle cx='146' cy='132' r='4' fill='%23e8b0b0'/%3E%3C/svg%3E">
+        </div>
+        <div class="ws-hero__float">
+          <span style="width:34px;height:34px;border-radius:10px;background:linear-gradient(140deg,#4a6fa5,#7fb2a8);display:grid;place-items:center;color:#fff;font-size:13px;">▶</span>
+          <div><b>第 12 期 · 白袜与帆布鞋</b><span>官方发布 · 今日更新</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 焦点影像 ===== -->
+<section class="ws-section ws-section--alt" id="ws-focus">
+  <div class="ws-wrap">
+    <div class="ws-sec-head">
+      <div class="ws-sec-head__left">
+        <span class="ws-kicker">Focus / 焦点影像</span>
+        <h2 class="ws-sec-title">本期官方精选，白袜女生的生活切面</h2>
+        <p class="ws-sec-desc">由品牌编辑部与签约创作者共同策展，从穿搭、城市到心情，记录真实可感的日常质感。</p>
+      </div>
+      <a class="ws-sec-more" href="#ws-videos">查看全部精品内容 →</a>
+    </div>
+
+    <div class="ws-focus">
+      <article class="ws-focus__main">
+        <img alt="焦点影像封面：白袜女生在初秋街角记录通勤穿搭" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23f3e2d0'/%3E%3Cstop offset='1' stop-color='%23d8c3a8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='500' fill='url(%23f1)'/%3E%3Crect x='0' y='300' width='800' height='200' fill='%23c0aa8e' opacity='0.55'/%3E%3Crect x='90' y='140' width='120' height='180' rx='8' fill='%23f9f4ec' opacity='0.9'/%3E%3Crect x='110' y='160' width='80' height='60' fill='%23b6a084' opacity='0.6'/%3E%3Crect x='620' y='120' width='110' height='200' rx='8' fill='%23f9f4ec' opacity='0.85'/%3E%3Crect x='638' y='144' width='74' height='70' fill='%23b6a084' opacity='0.6'/%3E%3Ccircle cx='400' cy='150' r='46' fill='%23f3d9c0'/%3E%3Cpath d='M354 150 Q400 92 446 150 L446 190 L354 190 Z' fill='%235b4a3c' opacity='0.8'/%3E%3Crect x='368' y='196' width='64' height='160' rx='20' fill='%23e9eef4'/%3E%3Crect x='380' y='250' width='40' height='8' fill='%234a6fa5' opacity='0.6'/%3E%3Cpath d='M372 356 L372 440 L392 440 L392 386 L408 386 L408 440 L428 440 L428 356 Z' fill='%23f6f8fa'/%3E%3Crect x='376' y='400' width='48' height='14' rx='7' fill='%23ffffff'/%3E%3Crect x='380' y='432' width='22' height='10' rx='5' fill='%23a9bccd'/%3E%3Crect x='404' y='432' width='22' height='10' rx='5' fill='%23a9bccd'/%3E%3Crect x='300' y='452' width='200' height='10' rx='5' fill='%23b09a80' opacity='0.7'/%3E%3Cpath d='M278 452 L522 452' stroke='%23a48d72' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+        <div class="ws-focus__cap">
+          <h3>初秋通勤手记：一双白袜如何搭出干净的利落感</h3>
+          <p>从鞋型、袜长到裤脚留白，品牌编辑部用 12 分钟拆解通勤场景的三套基础搭配，并附上真实街拍对照。</p>
+          <div class="ws-focus__meta"><span>官方发布</span><span>2026-11-17</span><span>时长 12:26</span><span>热度 9.8 万</span></div>
+        </div>
+      </article>
+
+      <div class="ws-focus__list">
+        <article class="ws-focus__item">
+          <img alt="焦点小卡：白袜女生周末城市漫步影像封面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 240'%3E%3Crect width='320' height='240' fill='%23dce8f2'/%3E%3Crect x='0' y='150' width='320' height='90' fill='%23b8cde0'/%3E%3Ccircle cx='250' cy='60' r='28' fill='%23f6e7c9'/%3E%3Crect x='40' y='120' width='60' height='90' fill='%23f2f6fa'/%3E%3Crect x='120' y='90' width='52' height='120' fill='%23e7eff6'/%3E%3Crect x='210' y='110' width='46' height='100' fill='%23f2f6fa'/%3E%3Crect x='46' y='132' width='16' height='18' fill='%23a8bfd2'/%3E%3Crect x='126' y='102' width='14' height='16' fill='%23a8bfd2'/%3E%3Crect x='216' y='122' width='14' height='16' fill='%23a8bfd2'/%3E%3Cpath d='M150 210 L150 180 L170 180 L170 210' fill='%23ffffff'/%3E%3C/svg%3E">
+          <div class="ws-focus__item-body">
+            <h4>周末城市漫步：三条适合穿白袜走完的小众路线</h4>
+            <span>城市探索 · 08:41</span>
+          </div>
+        </article>
+        <article class="ws-focus__item">
+          <img alt="焦点小卡：白袜女生衣橱收纳技巧影像封面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 240'%3E%3Crect width='320' height='240' fill='%23f6efe6'/%3E%3Crect x='40' y='50' width='240' height='150' rx='8' fill='%23e8dccb'/%3E%3Crect x='58' y='68' width='60' height='44' rx='6' fill='%23ffffff'/%3E%3Crect x='130' y='68' width='60' height='44' rx='6' fill='%23ffffff'/%3E%3Crect x='202' y='68' width='60' height='44' rx='6' fill='%23ffffff'/%3E%3Crect x='58' y='128' width='60' height='44' rx='6' fill='%23f0e4d4'/%3E%3Crect x='130' y='128' width='132' height='44' rx='6' fill='%23f0e4d4'/%3E%3Crect x='70' y='80' width='36' height='20' rx='4' fill='%23d9cbb8'/%3E%3Crect x='142' y='80' width='36' height='20' rx='4' fill='%23d9cbb8'/%3E%3C/svg%3E">
+          <div class="ws-focus__item-body">
+            <h4>白袜怎么洗才不发黄？衣物护理师的 5 个实操步骤</h4>
+            <span>实用技巧 · 06:12</span>
+          </div>
+        </article>
+        <article class="ws-focus__item">
+          <img alt="焦点小卡：白袜女生创作者访谈影像封面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 240'%3E%3Crect width='320' height='240' fill='%23e6eef5'/%3E%3Ccircle cx='160' cy='96' r='38' fill='%23f3d9c0'/%3E%3Cpath d='M122 96 Q160 48 198 96 L198 128 L122 128 Z' fill='%235b4a3c' opacity='0.75'/%3E%3Crect x='132' y='130' width='56' height='70' rx='16' fill='%23ffffff'/%3E%3Crect x='144' y='152' width='32' height='6' rx='3' fill='%234a6fa5' opacity='0.6'/%3E%3Crect x='70' y='196' width='180' height='8' rx='4' fill='%23b9cbdb'/%3E%3Ccircle cx='256' cy='56' r='16' fill='%23e8b0b0' opacity='0.7'/%3E%3C/svg%3E">
+          <div class="ws-focus__item-body">
+            <h4>对话「清晨六点」：一位日常影像创作者的三年记录</h4>
+            <span>人物访谈 · 15:03</span>
+          </div>
+        </article>
+        <article class="ws-focus__item">
+          <img alt="焦点小卡：白袜女生秋日治愈影像封面" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 240'%3E%3Crect width='320' height='240' fill='%23f5ecd8'/%3E%3Ccircle cx='80' cy='70' r='30' fill='%23f7dfb4' opacity='0.9'/%3E%3Cpath d='M0 180 Q90 140 180 176 T320 168 L320 240 L0 240 Z' fill='%23d9c8a4'/%3E%3Cpath d='M0 204 Q120 176 240 206 T320 200 L320 240 L0 240 Z' fill='%23c4b18c'/%3E%3Crect x='210' y='120' width='6' height='60' fill='%23a08d6e'/%3E%3Ccircle cx='213' cy='112' r='18' fill='%23e0c99e'/%3E%3C/svg%3E">
+          <div class="ws-focus__item-body">
+            <h4>傍晚六点的风：给忙碌日常的一段安静影像</h4>
+            <span>治愈影像 · 04:38</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 视频流 ===== -->
+<section class="ws-section" id="ws-videos">
+  <div class="ws-wrap">
+    <div class="ws-sec-head">
+      <div class="ws-sec-head__left">
+        <span class="ws-kicker">Community / 视频流</span>
+        <h2 class="ws-sec-title">热门视频流：白袜女生的最新影像合集</h2>
+        <p class="ws-sec-desc">官方与创作者共同产出的精品内容，支持点赞、收藏与分享，让好内容被更多人看见。</p>
+      </div>
+      <a class="ws-sec-more" href="#ws-creators">认识创作者 →</a>
+    </div>
+
+    <div class="ws-video-grid" id="wsVideoGrid">
+
+      <article class="ws-card">
+        <div class="ws-card__cover">
+          <img alt="视频封面：白袜女生的四季日常第一集清晨的玄关" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23e9f1f8'/%3E%3Crect x='0' y='190' width='480' height='80' fill='%23cbdbe8'/%3E%3Crect x='60' y='40' width='120' height='150' rx='6' fill='%23f7fbff'/%3E%3Crect x='80' y='60' width='80' height='90' fill='%23c9dbea'/%3E%3Crect x='290' y='110' width='120' height='80' rx='8' fill='%23ffffff'/%3E%3Crect x='310' y='128' width='34' height='44' rx='12' fill='%23ffffff' stroke='%23c7d6e5' stroke-width='3'/%3E%3Crect x='356' y='128' width='34' height='44' rx='12' fill='%23ffffff' stroke='%23c7d6e5' stroke-width='3'/%3E%3Ccircle cx='404' cy='52' r='22' fill='%23f6e7c9'/%3E%3C/svg%3E">
+          <span class="ws-card__tag">日常记录</span>
+          <span class="ws-card__time">07:18</span>
+          <span class="ws-card__play">▶</span>
+        </div>
+        <div class="ws-card__body">
+          <h3>白袜女生的四季日常 · 第一集：清晨的玄关</h3>
+          <p>从挑选一双白袜开始，记录一个普通工作日的出门仪式感，镜头安静而克制。</p>
+          <div class="ws-card__author"><span class="ws-avatar" style="background:#4a6fa5">白</span> 白袜女生官方</div>
+          <div class="ws-card__foot">
+            <button class="ws-act" data-act="like"><span class="ws-act__icon">♡</span><span class="ws-act__num">3128</span></button>
+            <button class="ws-act" data-act="fav"><span class="ws-act__icon">☆</span><span>收藏</span></button>
+            <button class="ws-act" data-act="share"><span class="ws-act__icon">⇪</span><span>分享</span></button>
+          </div>
+        </div>
+      </article>
+
+      <article class="ws-card">
+        <div class="ws-card__cover">
+          <img alt="视频封面：白袜与帆布鞋的三套基础搭配示范" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23f6efe6'/%3E%3Crect x='0' y='200' width='480' height='70' fill='%23e2d4c2'/%3E%3Cg fill='%23ffffff' stroke='%23cdbba5' stroke-width='2'%3E%3Cpath d='M60 200 L60 140 Q60 120 80 120 L120 120 Q140 120 140 140 L140 200 Z'/%3E%3Cpath d='M190 200 L190 130 Q190 112 210 112 L250 112 Q270 112 270 130 L270 200 Z'/%3E%3Cpath d='M320 200 L320 145 Q320 124 340 124 L380 124 Q400 124 400 145 L400 200 Z'/%3E%3C/g%3E%3Crect x='80' y='160' width='40' height='10' fill='%23e88b8b' opacity='0.6'/%3E%3Crect x='210' y='152' width='40' height='10' fill='%234a6fa5' opacity='0.6'/%3E%3Crect x='340' y='164' width='40' height='10' fill='%237fb2a8' opacity='0.7'/%3E%3C/svg%3E">
+          <span class="ws-card__tag">穿搭教程</span>
+          <span class="ws-card__time">10:02</span>
+          <span class="ws-card__play">▶</span>
+        </div>
+        <div class="ws-card__body">
+          <h3>三套白袜基础搭配：从帆布鞋到乐福鞋的过渡</h3>
+          <p>用同一双纯白短袜完成三种风格，附上裤脚长度与颜色搭配的实操建议。</p>
+          <div class="ws-card__author"><span class="ws-avatar" style="background:#7fb2a8">林</span> 林小满的搭配本</div>
+          <div class="ws-card__foot">
+            <button class="ws-act" data-act="like"><span class="ws-act__icon">♡</span><span class="ws-act__num">2604</span></button>
+            <button class="ws-act" data-act="fav"><span class="ws-act__icon">☆</span><span>收藏</span></button>
+            <button class="ws-act" data-act="share"><span class="ws-act__icon">⇪</span><span>分享</span></button>
+          </div>
+        </div>
+      </article>
+
+      <article class="ws-card">
+        <div class="ws-card__cover">
+          <img alt="视频封面：周末巷弄散步的白袜足迹" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23dce8f2'/%3E%3Crect x='0' y='170' width='480' height='100' fill='%23b8cde0'/%3E%3Crect x='30' y='60' width='90' height='110' fill='%23f2f6fa'/%3E%3Crect x='140' y='40' width='70' height='130' fill='%23e7eff6'/%3E%3Crect x='230' y='70' width='90' height='100' fill='%23f2f6fa'/%3E%3Crect x='340' y='50' width='80' height='120' fill='%23e7eff6'/%3E%3Ccircle cx='420' cy='74' r='20' fill='%23f6e7c9'/%3E%3Crect x='58' y='80' width='20' height='24' fill='%23a8bfd2'/%3E%3Crect x='160' y='60' width='18' height='22' fill='%23a8bfd2'/%3E%3Crect x='252' y='88' width='18' height='22' fill='%23a8bfd2'/%3E%3Cpath d='M200 190 L260 190' stroke='%23c9dbea' stroke-width='4'/%3E%3C/svg%3E">
+          <span class="ws-card__tag">城市探索</span>
+          <span class="ws-card__time">09:35</span>
+          <span class="ws-card__play">▶</span>
+        </div>
+        <div class="ws-card__body">
+          <h3>周末巷弄散步：一条适合慢慢走的城市支路</h3>
+          <p>避开人流，用一下午走完三公里小巷，记录旧墙、窗台与路过的人。</p>
+          <div class="ws-card__author"><span class="ws-avatar" style="background:#e88b8b">周</span> 周末走走看</div>
+          <div class="ws-card__foot">
+            <button class="ws-act" data-act="like"><span class="ws-act__icon">♡</span><span class="ws-act__num">1876</span></button>
+            <button class="ws-act" data-act="fav"><span class="ws-act__icon">☆</span><span>收藏</span></button>
+            <button class="ws-act" data-act="share"><span class="ws-act__icon">⇪</span><span>分享</span></button>
+          </div>
+        </div>
+      </article>
+
+      <article class="ws-card">
+        <div class="ws-card__cover">
+          <img alt="视频封面：衣物护理师讲解白袜洗护细节" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23eef3f9'/%3E%3Crect x='40' y='60' width='180' height='150' rx='10' fill='%23ffffff'/%3E%3Ccircle cx='130' cy='135' r='46' fill='none' stroke='%23c7d6e5' stroke-width='8'/%3E%3Ccircle cx='130' cy='135' r='26' fill='%23e9f1f8'/%3E%3Crect x='250' y='90' width='180' height='12' rx='6' fill='%23c7d6e5'/%3E%3Crect x='250' y='120' width='150' height='12' rx='6' fill='%23d9e5ef'/%3E%3Crect x='250' y='150' width='170' height='12' rx='6' fill='%23d9e5ef'/%3E%3Crect x='250' y='180' width='110' height='12' rx='6' fill='%23c7d6e5'/%3E%3Ccircle cx='410' cy='210' r='16' fill='%237fb2a8' opacity='0.7'/%3E%3C/svg%3E">
+          <span class="ws-card__tag">实用技巧</span>
+          <span class="ws-card__time">06:44</span>
+          <span class="ws-card__play">▶</span>
+        </div>
+        <div class="ws-card__body">
+          <h3>白袜不发黄护理指南：水温水洗与晾晒的细节</h3>
+          <p>衣物护理师出镜示范，从浸泡时长到晾晒角度，一次讲清楚常见问题。</p>
+          <div class="ws-card__author"><span class="ws-avatar" style="background:#5b8fa8">何</span> 何师傅讲护理</div>
+          <div class="ws-card__foot">
+            <button class="ws-act" data-act="like"><span class="ws-act__icon">♡</span><span class="ws-act__num">4132</span></button>
+            <button class="ws-act" data-act="fav"><span class="ws-act__icon">☆</span><span>收藏</span></button>
+            <button class="ws-act" data-act="share"><span class="ws-act__icon">⇪</span><span>分享</span></button>
+          </div>
+        </div>
+      </article>
+
+      <article class="ws-card">
+        <div class="ws-card__cover">
+          <img alt="视频封面：创作者清晨六点的书桌与窗光" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23f2ecdf'/%3E%3Crect x='0' y='200' width='480' height='70' fill='%23dccfb8'/%3E%3Crect x='80' y='70' width='150' height='110' rx='6' fill='%23fdf8ef'/%3E%3Crect x='100' y='90' width='110' height='70' fill='%23cfdff0'/%3E%3Crect x='280' y='150' width='120' height='50' rx='6' fill='%23c9b79c'/%3E%3Crect x='310' y='128' width='10' height='26' fill='%23a89073'/%3E%3Ccircle cx='315' cy='122' r='12' fill='%23e0c99e'/%3E%3Crect x='290' y='164' width='100' height='8' rx='4' fill='%23b8a488'/%3E%3C/svg%3E">
+          <span class="ws-card__tag">人物访谈</span>
+          <span class="ws-card__time">14:20</span>
+          <span class="ws-card__play">▶</span>
+        </div>
+        <div class="ws-card__body">
+          <h3>对话清晨六点：把日常拍摄做成长期习惯的方法</h3>
+          <p>一位坚持三年日更的创作者，分享选题积累、素材归档与心态调整。</p>
+          <div class="ws-card__author"><span class="ws-avatar" style="background:#8a7ab0">清</span> 清晨六点</div>
+          <div class="ws-card__foot">
+            <button class="ws-act" data-act="like"><span class="ws-act__icon">♡</span><span class="ws-act__num">1533</span></button>
+            <button class="ws-act" data-act="fav"><span class="ws-act__icon">☆</span><span>收藏</span></button>
+            <button class="ws-act" data-act="share"><span class="ws-act__icon">⇪</span><span>分享</span></button>
+          </div>
+        </div>
+      </article>
+
+      <article class="ws-card">
+        <div class="ws-card__cover">
+          <img alt="视频封面：白袜女生在傍晚天台看晚霞" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Cdefs%3E%3ClinearGradient id='sky1' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23f6d7b8'/%3E%3Cstop offset='1' stop-color='%23e7b7a1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='480' height='270' fill='url(%23sky1)'/%3E%3Ccircle cx='370' cy='90' r='30' fill='%23fff0d6' opacity='0.9'/%3E%3Crect x='0' y='180' width='480' height='90' fill='%23a98b7c' opacity='0.6'/%3E%3Crect x='70' y='170' width='340' height='10' rx='5' fill='%23ffffff' opacity='0.5'/%3E%3Cpath d='M200 180 L200 130 L250 130 L250 180' fill='%235c4a40' opacity='0.5'/%3E%3Cpath d='M0 180 Q120 156 240 180 T480 176 L480 270 L0 270 Z' fill='%238d7161' opacity='0.6'/%3E%3C/svg%3E">
+          <span class="ws-card__tag">治愈影像</span>
+          <span class="ws-card__time">05:12</span>
+          <span class="ws-card__play">▶</span>
+        </div>
+        <div class="ws-card__body">
+          <h3>天台的晚霞：给忙碌一天的一段安静收尾</h3>
+          <p>没有旁白，只有风声与环境音，适合在通勤路上或睡前轻轻播放。</p>
+          <div class="ws-card__author"><span class="ws-avatar" style="background:#e0a36b">晚</span> 晚风影像</div>
+          <div class="ws-card__foot">
+            <button class="ws-act" data-act="like"><span class="ws-act__icon">♡</span><span class="ws-act__num">5201</span></button>
+            <button class="ws-act" data-act="fav"><span class="ws-act__icon">☆</span><span>收藏</span></button>
+            <button class="ws-act" data-act="share"><span class="ws-act__icon">⇪</span><span>分享</span></button>
+          </div>
+        </div>
+      </article>
+
+      <article class="ws-card">
+        <div class="ws-card__cover">
+          <img alt="视频封面：手作袜子收纳袋的制作过程" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 480 270'%3E%3Crect width='480' height='270' fill='%23eef5f0'/%3E%3Crect x='0' y='210' width='480' height='60' fill='%23d4e6d9'/%3E%3Crect x='90' y='80' width='130' height='120' rx='8' fill='%23f8fdf9' stroke='%23b9d4c1' stroke-width='3'/%3E%3Cpath d='M120 110 L190 110 M120 140 L190 140 M120 170 L160 170' stroke='%23b9d4c1' stroke-width='4' stroke-linecap='round'/%3E%3Ccircle cx='320' cy='120' r='42' fill='%23e1efe4'/%3E%3Cpath d='M300 120 L340 120 M320 100 L320 140' stroke='%2388b696' stroke-width='5' stroke-linecap='round'/%3E%3Crect x='285' y='180' width='80' height='30' rx='8' fill='%23c5dfcc'/%3E%3C/svg%3E">
+          <span class="ws-card__tag">手作 DIY</span>
+          <span class="ws-card__time">08:56</span>
+          <span class="ws-card__play">▶</span>
+        </div>
+        <div class="ws-card__body">
+          <h3>旧袜子别丢：把它做成抽屉里的收纳小袋</h3>
+          <p>零基础也能完成的手作教程，材料简单，成品实用，适合周末在家尝试。</p>
+          <div class="ws-card__author"><span class="ws-avatar" style="background:#6fa88c">木</span> 木棉手作间</div>
+          <div class="ws-card__foot">
+            <button class="ws-act" data-act="like"><span class="ws-act__icon">♡</span><span class="ws-act__num">2210</span></button>
+            <button class="ws-act" data-act="fav"><span class="ws-act__icon">☆</span><span>收藏</span></button>
+            <button class="ws-act" data-act="share"><span class="ws-act__icon">⇪</span><span>分享</span></button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== 专题企划 ===== -->
+<section class="ws-section ws-section--alt" id="ws-topics">
+  <div class="ws-wrap">
+    <div class="ws-sec-head">
+      <div class="ws-sec-head__left">
+        <span class="ws-kicker">Series / 专题企划</span>
+        <h2 class="ws-sec-title">正在进行的品牌企划与共创专题</h2>
+        <p class="ws-sec-desc">围绕白袜与日常的长期记录计划，欢迎创作者报名参与，共同完成多城影像采集。</p>
+      </div>
+    </div>
+    <div class="ws-topics">
+      <article class="ws-topic">
+        <img alt="专题封面：白袜女生的四季日常长期企划" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 360'%3E%3Crect width='320' height='360' fill='%23dfeaf4'/%3E%3Ccircle cx='80' cy='90' r='34' fill='%23f6e7c9'/%3E%3Cpath d='M0 260 Q80 220 160 258 T320 248 L320 360 L0 360 Z' fill='%23b6cbdc'/%3E%3Cpath d='M0 300 Q100 268 200 300 T320 292 L320 360 L0 360 Z' fill='%239db6cb'/%3E%3Crect x='200' y='140' width='46' height='90' rx='16' fill='%23ffffff'/%3E%3Crect x='242' y='140' width='46' height='90' rx='16' fill='%23ffffff'/%3E%3C/svg%3E">
+        <div class="ws-topic__body">
+          <h3>白袜女生的四季日常</h3>
+          <p>按季节记录穿搭与心情，已更新至第四季</p>
+          <span class="ws-topic__state">持续更新中</span>
+        </div>
+      </article>
+      <article class="ws-topic">
+        <img alt="专题封面：城市漫步影像采集计划" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 360'%3E%3Crect width='320' height='360' fill='%23e8f0ec'/%3E%3Crect x='0' y='230' width='320' height='130' fill='%23c3d8ca'/%3E%3Crect x='40' y='100' width='70' height='130' fill='%23f6fbf7'/%3E%3Crect x='130' y='70' width='60' height='160' fill='%23edf6ef'/%3E%3Crect x='212' y='110' width='66' height='120' fill='%23f6fbf7'/%3E%3Crect x='54' y='120' width='16' height='20' fill='%23a8c6b3'/%3E%3Crect x='142' y='90' width='14' height='18' fill='%23a8c6b3'/%3E%3Crect x='224' y='130' width='14' height='18' fill='%23a8c6b3'/%3E%3Ccircle cx='270' cy='60' r='20' fill='%23f2e2c4'/%3E%3C/svg%3E">
+        <div class="ws-topic__body">
+          <h3>城市漫步采集计划</h3>
+          <p>41 座城市的街头影像，正在征集本地方向导</p>
+          <span class="ws-topic__state">报名进行中</span>
+        </div>
+      </article>
+      <article class="ws-topic">
+        <img alt="专题封面：白袜护理小课堂实用系列" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 360'%3E%3Crect width='320' height='360' fill='%23f5ece2'/%3E%3Ccircle cx='160' cy='150' r='66' fill='none' stroke='%23dcc7ad' stroke-width='12'/%3E%3Ccircle cx='160' cy='150' r='34' fill='%23fbf5ee'/%3E%3Crect x='70' y='250' width='180' height='14' rx='7' fill='%23d8c2a8'/%3E%3Crect x='90' y='282' width='140' height='14' rx='7' fill='%23e3d3bf'/%3E%3Crect x='110' y='314' width='100' height='14' rx='7' fill='%23ece0d0'/%3E%3C/svg%3E">
+        <div class="ws-topic__body">
+          <h3>白袜护理小课堂</h3>
+          <p>从洗护到收纳，把细节讲透的实用系列</p>
+          <span class="ws-topic__state">已更新 18 期</span>
+        </div>
+      </article>
+      <article class="ws-topic">
+        <img alt="专题封面：日常创作者扶持计划" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 360'%3E%3Crect width='320' height='360' fill='%23e9ecf6'/%3E%3Ccircle cx='110' cy='120' r='40' fill='%23cdd3ec'/%3E%3Ccircle cx='210' cy='120' r='40' fill='%23dbe0f2'/%3E%3Ccircle cx='160' cy='210' r='40' fill='%23c4cbea'/%3E%3Cpath d='M110 160 L160 210 L210 160' stroke='%23a8b2dd' stroke-width='5' fill='none'/%3E%3Crect x='60' y='290' width='200' height='12' rx='6' fill='%23c4cbea'/%3E%3Crect x='90' y='316' width='140' height='12' rx='6' fill='%23d3d9f0'/%3E%3C/svg%3E">
+        <div class="ws-topic__body">
+          <h3>日常创作者扶持计划</h3>
+          <p>面向真实记录者，提供选题与拍摄支持</p>
+          <span class="ws-topic__state">长期开放</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 创作者矩阵 ===== -->
+<section class="ws-section" id="ws-creators">
+  <div class="ws-wrap">
+    <div class="ws-sec-head">
+      <div class="ws-sec-head__left">
+        <span class="ws-kicker">Creators / 创作者矩阵</span>
+        <h2 class="ws-sec-title">与白袜女生一起记录日常的人</h2>
+        <p class="ws-sec-desc">官方签约与社区共创的创作者，覆盖穿搭、城市、手作、治愈等多元方向，点击查看档案。</p>
+      </div>
+      <a class="ws-sec-more" href="#ws-contact">申请成为创作者 →</a>
+    </div>
+
+    <div class="ws-creators">
+      <article class="ws-creator" data-creator="林小满" data-field="日常穿搭 · 通勤搭配">
+        <div class="ws-creator__ava" style="background:linear-gradient(140deg,#4a6fa5,#7fb2a8)">林</div>
+        <h3>林小满</h3>
+        <div class="ws-creator__field">日常穿搭 · 通勤搭配</div>
+        <p>擅长把基础款穿出干净的层次感，视频节奏舒缓，被用户称为「最会讲裤脚长度的人」。</p>
+        <div class="ws-creator__nums">
+          <div><b>186</b>作品</div>
+          <div><b>4.2万</b>粉丝</div>
+        </div>
+      </article>
+      <article class="ws-creator" data-creator="清晨六点" data-field="生活记录 · 长期日更">
+        <div class="ws-creator__ava" style="background:linear-gradient(140deg,#8a7ab0,#c49ad0)">清</div>
+        <h3>清晨六点</h3>
+        <div class="ws-creator__field">生活记录 · 长期日更</div>
+        <p>三年坚持记录每天的清晨，擅长把平凡细节拍出质感，作品被多个城市影像计划收录。</p>
+        <div class="ws-creator__nums">
+          <div><b>412</b>作品</div>
+          <div><b>6.8万</b>粉丝</div>
+        </div>
+      </article>
+      <article class="ws-creator" data-creator="木棉手作间" data-field="手作 DIY · 旧物改造">
+        <div class="ws-creator__ava" style="background:linear-gradient(140deg,#6fa88c,#a7cdb5)">木</div>
+        <h3>木棉手作间</h3>
+        <div class="ws-creator__field">手作 DIY · 旧物改造</div>
+        <p>以「让旧物再被喜欢一次」为理念，教程步骤清晰，适合零基础观众跟着做。</p>
+        <div class="ws-creator__nums">
+          <div><b>97</b>作品</div>
+          <div><b>2.5万</b>粉丝</div>
+        </div>
+      </article>
+      <article class="ws-creator" data-creator="晚风影像" data-field="治愈影像 · 环境音记录">
+        <div class="ws-creator__ava" style="background:linear-gradient(140deg,#e0a36b,#e8b98b)">晚</div>
+        <h3>晚风影像</h3>
+        <div class="ws-creator__field">治愈影像 · 环境音记录</div>
+        <p>专注无人声的生活影像，用风声、雨声与晚霞为忙碌的人留出一点安静时间。</p>
+        <div class="ws-creator__nums">
+          <div><b>134</b>作品</div>
+          <div><b>3.6万</b>粉丝</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 故事随笔 + 影像墙 ===== -->
+<section class="ws-section ws-section--alt" id="ws-story">
+  <div class="ws-wrap">
+    <div class="ws-sec-head">
+      <div class="ws-sec-head__left">
+        <span class="ws-kicker">Story / 故事与影像</span>
+        <h2 class="ws-sec-title">品牌故事：一双白袜背后的日常主张</h2>
+        <p class="ws-sec-desc">白袜女生坚持真实、克制、有温度的影像表达，以下是来自编辑部与创作者的生活随笔。</p>
+      </div>
+    </div>
+
+    <div class="ws-stories">
+      <article class="ws-story">
+        <h3>从一双白袜开始：关于干净感的品牌起点</h3>
+        <p>品牌创立之初，我们把镜头对准最简单的白袜——它不抢眼，却最能体现一个人的整洁与认真。三年里，白袜女生从一个记录账号成长为持续运营的原创影像平台，但核心从未改变：认真记录真实生活。</p>
+        <div class="ws-story__by"><span class="ws-avatar" style="background:#4a6fa5;width:24px;height:24px;font-size:10px">编</span> 品牌编辑部 · 2026-11-12</div>
+      </article>
+      <article class="ws-story">
+        <h3>在通勤路上找画面：一个普通工作日的拍摄手记</h3>
+        <p>早上七点四十分的地铁口，光正好落在行人裤脚。我蹲下来拍了十几分钟，直到人流散去。回到剪辑台才发现，最打动人的不是构图，而是那几秒真实的匆忙。日常影像的力量，大概就在这里。</p>
+        <div class="ws-story__by"><span class="ws-avatar" style="background:#7fb2a8;width:24px;height:24px;font-size:10px">林</span> 林小满 · 2026-11-08</div>
+      </article>
+      <article class="ws-story">
+        <h3>把手作带回生活：一次抽屉整理的完整记录</h3>
+        <p>旧袜子、剩布头与一只空盒子，拼成了新的收纳袋。手作并不是为了省钱，而是让人重新与自己的物品建立关系。这期视频上线后，很多用户在评论区晒出自己的作品，那是最有力量的互动。</p>
+        <div class="ws-story__by"><span class="ws-avatar" style="background:#6fa88c;width:24px;height:24px;font-size:10px">木</span> 木棉手作间 · 2026-11-03</div>
+      </article>
+    </div>
+
+    <div class="ws-sec-head" style="margin-top:48px">
+      <div class="ws-sec-head__left">
+        <span class="ws-kicker">Gallery / 影像墙</span>
+        <h2 class="ws-sec-title">用户与创作者共同分享的日常切片</h2>
+        <p class="ws-sec-desc">来自社区的真实影像，尺寸与视角各异，每一张都值得被看见。</p>
+      </div>
+    </div>
+    <div class="ws-wall">
+      <figure class="ws-wall--big">
+        <img alt="影像墙大图：清晨窗边的白袜与毛衣细节" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 560 500'%3E%3Crect width='560' height='500' fill='%23e9f1f8'/%3E%3Crect x='60' y='60' width='180' height='200' rx='6' fill='%23f9fcff'/%3E%3Crect x='84' y='84' width='132' height='120' fill='%23c7dbea'/%3E%3Crect x='300' y='120' width='170' height='14' rx='7' fill='%23b9cddd'/%3E%3Crect x='300' y='150' width='130' height='14' rx='7' fill='%23cbdae7'/%3E%3Crect x='120' y='300' width='50' height='120' rx='20' fill='%23ffffff'/%3E%3Crect x='178' y='300' width='50' height='120' rx='20' fill='%23ffffff'/%3E%3Crect x='124' y='340' width='42' height='10' fill='%23e88b8b' opacity='0.5'/%3E%3Crect x='182' y='340' width='42' height='10' fill='%234a6fa5' opacity='0.5'/%3E%3C/svg%3E">
+        <figcaption>清晨窗边 · 白袜与毛衣</figcaption>
+      </figure>
+      <figure class="ws-wall--tall">
+        <img alt="影像墙竖图：地铁站台的白袜与帆布鞋" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 500'%3E%3Crect width='300' height='500' fill='%23dfe8f1'/%3E%3Crect x='0' y='330' width='300' height='170' fill='%23bccfdf'/%3E%3Crect x='40' y='80' width='220' height='10' rx='5' fill='%23ffffff' opacity='0.8'/%3E%3Crect x='40' y='120' width='160' height='10' rx='5' fill='%23ffffff' opacity='0.6'/%3E%3Crect x='120' y='380' width='42' height='80' rx='16' fill='%23ffffff'/%3E%3Crect x='172' y='380' width='42' height='80' rx='16' fill='%23ffffff'/%3E%3Crect x='124' y='410' width='34' height='8' fill='%234a6fa5' opacity='0.5'/%3E%3Crect x='176' y='410' width='34' height='8' fill='%23e88b8b' opacity='0.5'/%3E%3C/svg%3E">
+        <figcaption>站台等待 · 通勤瞬间</figcaption>
+      </figure>
+      <figure>
+        <img alt="影像墙小图：白袜收纳抽屉的整理细节" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 240'%3E%3Crect width='300' height='240' fill='%23f4ede3'/%3E%3Crect x='30' y='40' width='240' height='160' rx='8' fill='%23e6d9c6'/%3E%3Crect x='48' y='58' width='66' height='54' rx='6' fill='%23ffffff'/%3E%3Crect x='126' y='58' width='66' height='54' rx='6' fill='%23ffffff'/%3E%3Crect x='204' y='58' width='48' height='54' rx='6' fill='%23faf4ec'/%3E%3Crect x='48' y='126' width='66' height='54' rx='6' fill='%23faf4ec'/%3E%3Crect x='126' y='126' width='126' height='54' rx='6' fill='%23ffffff'/%3E%3C/svg%3E">
+        <figcaption>抽屉整理 · 收纳日常</figcaption>
+      </figure>
+      <figure>
+        <img alt="影像墙小图：秋日路边落叶与步行足迹" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 240'%3E%3Crect width='300' height='240' fill='%23f2e6cf'/%3E%3Cpath d='M0 170 Q80 140 160 168 T300 160 L300 240 L0 240 Z' fill='%23d6bf94'/%3E%3Ccircle cx='228' cy='70' r='26' fill='%23f6dfae'/%3E%3Cpath d='M90 90 Q104 70 118 90 Q104 110 90 90 Z' fill='%23cf9b63'/%3E%3Cpath d='M150 120 Q164 100 178 120 Q164 140 150 120 Z' fill='%23dba86f'/%3E%3Crect x='60' y='196' width='34' height='10' rx='5' fill='%23b9a37c'/%3E%3C/svg%3E">
+        <figcaption>秋日街角 · 落叶与脚步</figcaption>
+      </figure>
+      <figure>
+        <img alt="影像墙小图：书桌上的一杯热茶与笔记本" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 240'%3E%3Crect width='300' height='240' fill='%23f6f1e8'/%3E%3Crect x='0' y='160' width='300' height='80' fill='%23e3d6c3'/%3E%3Crect x='40' y='110' width='110' height='50' rx='5' fill='%23ffffff'/%3E%3Crect x='54' y='124' width='82' height='6' rx='3' fill='%23c9bda9'/%3E%3Crect x='54' y='136' width='60' height='6' rx='3' fill='%23d8cfc0'/%3E%3Cpath d='M200 130 L240 130 L236 160 L204 160 Z' fill='%23ffffff'/%3E%3Cpath d='M204 160 Q220 176 236 160' fill='%23ffffff'/%3E%3C/svg%3E">
+        <figcaption>书桌一角 · 午后热茶</figcaption>
+      </figure>
+      <figure>
+        <img alt="影像墙小图：阳台晾晒的白袜与浅蓝天空" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 240'%3E%3Crect width='300' height='240' fill='%23d9eaf6'/%3E%3Ccircle cx='240' cy='50' r='22' fill='%23f8ecc9'/%3E%3Crect x='0' y='190' width='300' height='50' fill='%23c2d8e8'/%3E%3Cpath d='M40 60 L260 60' stroke='%2395b6cd' stroke-width='4'/%3E%3Cpath d='M70 60 L70 96 L96 96 L96 60' fill='%23ffffff'/%3E%3Cpath d='M150 60 L150 96 L176 96 L176 60' fill='%23ffffff'/%3E%3Cpath d='M230 60 L230 96 L256 96 L256 60' fill='%23ffffff'/%3E%3C/svg%3E">
+        <figcaption>阳台晾晒 · 晴天微风</figcaption>
+      </figure>
+      <figure>
+        <img alt="影像墙小图：夜晚街道与便利店灯光" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 240'%3E%3Crect width='300' height='240' fill='%23233a4d'/%3E%3Crect x='30' y='80' width='90' height='110' fill='%232f4a5f'/%3E%3Crect x='150' y='60' width='120' height='130' fill='%23294457'/%3E%3Crect x='60' y='100' width='30' height='24' fill='%23f2d99b' opacity='0.85'/%3E%3Crect x='180' y='90' width='60' height='20' fill='%23f2d99b' opacity='0.7'/%3E%3Crect x='184' y='126' width='52' height='50' fill='%23e9f2f8' opacity='0.4'/%3E%3Crect x='0' y='190' width='300' height='50' fill='%231a2c3b'/%3E%3C/svg%3E">
+        <figcaption>夜色街道 · 便利店灯</figcaption>
+      </figure>
+      <figure>
+        <img alt="影像墙小图：木质衣架上的白色棉袜" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 240'%3E%3Crect width='300' height='240' fill='%23f3ece1'/%3E%3Cpath d='M80 60 L220 60' stroke='%23b7a189' stroke-width='6' stroke-linecap='round'/%3E%3Cpath d='M120 60 L120 100 L150 100 L150 60' fill='%23ffffff'/%3E%3Cpath d='M180 60 L180 100 L210 100 L210 60' fill='%23ffffff'/%3E%3Crect x='124' y='80' width='22' height='6' fill='%234a6fa5' opacity='0.5'/%3E%3Crect x='184' y='80' width='22' height='6' fill='%23e88b8b' opacity='0.5'/%3E%3Crect x='0' y='190' width='300' height='50' fill='%23e4d8c6'/%3E%3C/svg%3E">
+        <figcaption>木架衣角 · 白袜细节</figcaption>
+      </figure>
+      <figure>
+        <img alt="影像墙小图：雨后路面的浅色倒影" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 240'%3E%3Crect width='300' height='240' fill='%23cfdde8'/%3E%3Crect x='0' y='130' width='300' height='110' fill='%23b3c7d8'/%3E%3Crect x='40' y='60' width='60' height='90' fill='%23e4edf4' opacity='0.7'/%3E%3Crect x='130' y='40' width='50' height='110' fill='%23eaf2f8' opacity='0.7'/%3E%3Crect x='210' y='70' width='56' height='80' fill='%23e4edf4' opacity='0.7'/%3E%3Crect x='40' y='170' width='60' height='40' fill='%23deebf4' opacity='0.5'/%3E%3Crect x='130' y='164' width='50' height='46' fill='%23e4eef6' opacity='0.5'/%3E%3C/svg%3E">
+        <figcaption>雨后路面 · 城市倒影</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 深度解析 ===== -->
+<section class="ws-section" id="ws-about">
+  <div class="ws-wrap">
+    <div class="ws-about">
+      <div class="ws-about__media">
+        <img alt="品牌深度解析配图：白袜女生编辑部的工作台与影像素材" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 420 520'%3E%3Crect width='420' height='520' fill='%23eef4fa'/%3E%3Crect x='40' y='70' width='340' height='230' rx='10' fill='%23ffffff'/%3E%3Crect x='62' y='92' width='296' height='140' fill='%23cfe0ee'/%3E%3Ccircle cx='160' cy='150' r='22' fill='%23e88b8b' opacity='0.8'/%3E%3Crect x='200' y='130' width='130' height='12' rx='6' fill='%23a9c2d6'/%3E%3Crect x='200' y='154' width='100' height='12' rx='6' fill='%23bcd2e2'/%3E%3Crect x='62' y='246' width='296' height='12' rx='6' fill='%23dbe8f2'/%3E%3Crect x='40' y='330' width='150' height='110' rx='10' fill='%23ffffff'/%3E%3Crect x='62' y='352' width='106' height='66' rx='6' fill='%23e3ceb6'/%3E%3Crect x='210' y='330' width='170' height='110' rx='10' fill='%23ffffff'/%3E%3Crect x='232' y='352' width='126' height='12' rx='6' fill='%23cfdce6'/%3E%3Crect x='232' y='378' width='96' height='12' rx='6' fill='%23dbe6ee'/%3E%3Crect x='232' y='404' width='116' height='12' rx='6' fill='%23e4edf3'/%3E%3Crect x='40' y='470' width='340' height='10' rx='5' fill='%23c9d9e6'/%3E%3C/svg%3E">
+        <span class="ws-about__badge">官方深度解析</span>
+      </div>
+      <div class="ws-about__text">
+        <span class="ws-kicker">About / 定位解析</span>
+        <h2 class="ws-sec-title">白袜女生：把日常记录做成一个可持续的内容生态</h2>
+        <p>
+          作为深耕日常生活影像领域的<strong>原创视频品牌</strong>，白袜女生并不是单纯的账号名称，而是一个围绕「真实、干净、有温度」持续运营的内容生态。
+          品牌以官方网站与企业矩阵为依托，聚合官方编辑部、签约创作者与社区用户三方力量，形成从选题策划、拍摄制作到分发互动的完整链路。
+          我们关注的不是夸张的戏剧化叙事，而是清晨出门、午后整理、傍晚散步这些看似平常却极具质感的时刻。
+        </p>
+        <p>
+          在内容方向上，白袜女生围绕<strong>日常穿搭、城市探索、兴趣同好与治愈影像</strong>四条主线展开：
+          穿搭线以白袜为视觉锚点，讲解基础款的层次与细节；城市线以漫步与在地文化为方法，记录街角、巷弄与生活半径；
+          兴趣线覆盖手作、收纳、阅读等多元爱好，强调动手与分享；治愈线则用克制镜头与环境音，为观众保留一段安静时间。
+          四条主线共同构成品牌的品质口碑，也让关键词「白袜女生」在不同场景中自然生长。
+        </p>
+        <p>
+          品牌坚持<strong>正版高清</strong>出品与<strong>用户至上</strong>的运营原则：所有官方内容均经过编辑审核与画质校准；
+          创作者投稿可通过官方入口提交，审核通过后进入专题或视频流；社区互动区支持点赞、收藏、评论与分享，
+          并以透明的方式展示热度与更新信息。我们相信，行业领先不靠口号，而靠持续运营与一次次真实的交付。
+        </p>
+        <p>
+          面向未来，白袜女生将继续推进城市影像计划与创作者扶持计划，把更多真实、温暖、有力量的日常记录纳入内容生态，
+          并承担平台应有的社会责任：尊重原创、保护正版、友善互动，让每一位用户与创作者都能在这里被看见、被认真对待。
+        </p>
+        <div class="ws-points">
+          <div class="ws-point"><b>原创审核</b><span>官方与投稿内容双重审核，保障品质与正版。</span></div>
+          <div class="ws-point"><b>多元包容</b><span>穿搭、城市、手作、治愈并行，容纳不同生活节奏。</span></div>
+          <div class="ws-point"><b>持续陪伴</b><span>四季更新不中断，让日常记录成为长期习惯。</span></div>
+          <div class="ws-point"><b>匠心制作</b><span>从选题到剪辑层层打磨，坚持高清与专业。</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 企业动态 ===== -->
+<section class="ws-section ws-section--alt" id="ws-news">
+  <div class="ws-wrap">
+    <div class="ws-sec-head">
+      <div class="ws-sec-head__left">
+        <span class="ws-kicker">News / 企业动态</span>
+        <h2 class="ws-sec-title">官方发布与内容更新记录</h2>
+        <p class="ws-sec-desc">品牌资讯、专题上线与创作者计划的官方公告，保持透明、及时、可追溯。</p>
+      </div>
+    </div>
+    <div class="ws-news">
+      <article class="ws-news__item">
+        <div class="ws-news__date"><b>11/19</b><span>2026</span></div>
+        <div>
+          <h3>《白袜女生的四季日常》第四季正式上线</h3>
+          <p>新一季以「通勤与周末」为双线索，共 12 集，官方团队与 6 位创作者联合制作。</p>
+        </div>
+      </article>
+      <article class="ws-news__item">
+        <div class="ws-news__date"><b>11/14</b><span>2026</span></div>
+        <div>
+          <h3>城市漫步采集计划新增 7 座城市</h3>
+          <p>开放本地向导报名通道，入选者可获得拍摄支持与专题推荐位。</p>
+        </div>
+      </article>
+      <article class="ws-news__item">
+        <div class="ws-news__date"><b>11/06</b><span>2026</span></div>
+        <div>
+          <h3>品牌官网内容生态完成一次体验优化</h3>
+          <p>搜索、收藏与分享流程重新梳理，移动端阅读与播放体验同步提升。</p>
+        </div>
+      </article>
+      <article class="ws-news__item">
+        <div class="ws-news__date"><b>10/28</b><span>2026</span></div>
+        <div>
+          <h3>日常创作者扶持计划第二期公布入选名单</h3>
+          <p>本期共收到 380 份投稿，最终 24 位创作者进入扶持名单，覆盖 9 个城市。</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 用户评价 ===== -->
+<section class="ws-section" id="ws-reviews">
+  <div class="ws-wrap">
+    <div class="ws-sec-head">
+      <div class="ws-sec-head__left">
+        <span class="ws-kicker">Voices / 用户评价</span>
+        <h2 class="ws-sec-title">来自社区的真实声音</h2>
+        <p class="ws-sec-desc">不同身份、不同坐标的用户，分享他们与白袜女生的日常交集。</p>
+      </div>
+    </div>
+    <div class="ws-reviews">
+      <article class="ws-review">
+        <div class="ws-review__head"><span class="ws-avatar" style="background:#4a6fa5">苏</span><div><b>苏打气泡</b><br><span>上班族 · 上海</span></div></div>
+        <div class="ws-stars">★★★★★</div>
+        <p>通勤系列真的救了我。以前随手抓双袜子就出门，现在会认真想裤脚长度。视频讲得细，不油腻，看完就能用。</p>
+      </article>
+      <article class="ws-review">
+        <div class="ws-review__head"><span class="ws-avatar" style="background:#7fb2a8">阿</span><div><b>阿岚不赶路</b><br><span>自由职业 · 成都</span></div></div>
+        <div class="ws-stars">★★★★★</div>
+        <p>晚风影像那期天台视频，我反复看了很多遍。没有旁白反而更舒服，像有人在替你把一天的疲惫轻轻放下来。</p>
+      </article>
+      <article class="ws-review">
+        <div class="ws-review__head"><span class="ws-avatar" style="background:#e88b8b">小</span><div><b>小满同学</b><br><span>大学生 · 武汉</span></div></div>
+        <div class="ws-stars">★★★★☆</div>
+        <p>手作教程步骤很清楚，第一次做收纳袋就成功了。就是希望材料清单能再提前一点放在开头，方便准备。</p>
+      </article>
+      <article class="ws-review">
+        <div class="ws-review__head"><span class="ws-avatar" style="background:#8a7ab0">周</span><div><b>周末走走看</b><br><span>创作者 · 杭州</span></div></div>
+        <div class="ws-stars">★★★★★</div>
+        <p>投稿流程比想象中顺畅，编辑会给具体的修改建议，而不是简单拒稿。这一点对新人创作者特别重要。</p>
+      </article>
+      <article class="ws-review">
+        <div class="ws-review__head"><span class="ws-avatar" style="background:#5b8fa8">老</span><div><b>老陈的日常</b><br><span>摄影师 · 广州</span></div></div>
+        <div class="ws-stars">★★★★☆</div>
+        <p>画质稳定，构图克制，能看出团队在认真做内容。如果能多一些幕后花絮，会更想了解你们的拍摄方法。</p>
+      </article>
+      <article class="ws-review">
+        <div class="ws-review__head"><span class="ws-avatar" style="background:#e0a36b">林</span><div><b>林间有风</b><br><span>教师 · 南京</span></div></div>
+        <div class="ws-stars">★★★★★</div>
+        <p>喜欢这个平台的语气，不吵不闹。睡前看一集十几分钟的日常纪录，比刷短视频舒服太多了。</p>
+      </article>
+      <article class="ws-review">
+        <div class="ws-review__head"><span class="ws-avatar" style="background:#6fa88c">布</span><div><b>布丁与猫</b><br><span>宝妈 · 苏州</span></div></div>
+        <div class="ws-stars">★★★★☆</div>
+        <p>收纳那期很有启发，带着孩子一起整理了抽屉。希望以后能多一些亲子一起动手的内容。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="ws-section ws-section--alt" id="ws-faq">
+  <div class="ws-wrap">
+    <div class="ws-sec-head" style="justify-content:center;text-align:center">
+      <div class="ws-sec-head__left" style="margin:0 auto">
+        <span class="ws-kicker">Help / 帮助中心</span>
+        <h2 class="ws-sec-title">常见问题</h2>
+        <p class="ws-sec-desc">关于投稿、创作与使用体验的高频疑问，点击展开查看说明。</p>
+      </div>
+    </div>
+    <div class="ws-faq">
+      <details open>
+        <summary>如何向白袜女生官方投稿？</summary>
+        <p>可通过页面底部的发布入口提交主题说明、素材链接与联系方式。官方编辑部会在五个工作日内回复，通过后进入排期与制作流程。</p>
+      </details>
+      <details>
+        <summary>投稿对设备和画质有什么要求？</summary>
+        <p>建议横版 16:9，分辨率不低于 1080P，画面稳定、声音清晰即可。若使用手机拍摄，可提前开启防抖并避免逆光。</p>
+      </details>
+      <details>
+        <summary>白袜女生的内容更新频率是怎样的？</summary>
+        <p>官方栏目保持每周固定更新，专题企划按季推进；创作者内容按个人节奏发布，经审核的精品内容会进入首页推荐。</p>
+      </details>
+      <details>
+        <summary>可以申请成为签约创作者吗？</summary>
+        <p>可以。日常创作者扶持计划长期开放，提交往期作品与选题方向后，由编辑团队评估内容质量与更新稳定性。</p>
+      </details>
+      <details>
+        <summary>平台如何保障内容正版与原创？</summary>
+        <p>所有官方内容均由品牌自有团队或授权创作者制作；投稿需声明原创并授权平台展示，发现侵权可通过联系入口反馈。</p>
+      </details>
+      <details>
+        <summary>如何收藏和分享喜欢的影像？</summary>
+        <p>在视频卡片底部点击收藏即可加入个人列表；点击分享可复制链接或选择常用社交渠道，链接会保留作品信息。</p>
+      </details>
+      <details>
+        <summary>品牌是否接受商业合作与联合企划？</summary>
+        <p>接受。可在联系区留言说明合作类型与预期形式，品牌方会结合内容调性进行评估，并在合适的时间给出反馈。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 联系 CTA ===== -->
+<section class="ws-section" id="ws-contact">
+  <div class="ws-wrap">
+    <div class="ws-cta">
+      <div>
+        <h2>和白袜女生一起，记录下一段日常</h2>
+        <p>无论是投稿、合作还是反馈建议，我们都愿意认真读完每一条留言。品牌官方团队将持续运营，让好内容被更多人看见。</p>
+      </div>
+      <div class="ws-cta__actions">
+        <button class="ws-btn" id="wsSubmitBtn2">提交投稿</button>
+        <button class="ws-btn ws-btn--ghost" id="wsCopyBtn">复制品牌联系方式</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 页脚 ===== -->
+<footer class="ws-footer" id="ws-footer">
+  <div class="ws-wrap">
+    <div class="ws-footer__grid">
+      <div class="ws-footer__brand">
+        <div class="ws-logo">
+          <span class="ws-logo__mark">白</span>
+          <span class="ws-logo__text">
+            <span class="ws-logo__name">白袜女生</span>
+            <span class="ws-logo__sub">OFFICIAL&nbsp;VIDEO</span>
+          </span>
+        </div>
+        <p>白袜女生官方网站 · 原创生活方式影像品牌。专注日常穿搭、城市探索与治愈影像，以真实、温暖、有力量的记录，陪伴每一位认真生活的人。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#ws-focus">焦点影像</a></li>
+          <li><a href="#ws-videos">热门视频流</a></li>
+          <li><a href="#ws-topics">专题企划</a></li>
+          <li><a href="#ws-creators">创作者矩阵</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于品牌</h4>
+        <ul>
+          <li><a href="#ws-story">品牌故事</a></li>
+          <li><a href="#ws-about">定位解析</a></li>
+          <li><a href="#ws-news">企业动态</a></li>
+          <li><a href="#ws-contact">商务合作</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>联系与支持</h4>
+        <ul>
+          <li>品牌邮箱：brand@baiwajiang.com</li>
+          <li>合作邮箱：partner@baiwajiang.com</li>
+          <li>内容反馈：可在帮助中心留言</li>
+          <li>工作时间：周一至周五 10:00–18:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="ws-footer__bottom">
+      <span>白袜女生官方网站 | 版权所有 © 2026 白袜女生品牌 | 持续运营中</span>
+      <span><a href="#ws-home">返回顶部</a> · <a href="#ws-faq">帮助中心</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== 弹窗：投稿 / 创作者档案 / 反馈 ===== -->
+<div class="ws-modal" id="wsModalSubmit" role="dialog" aria-modal="true" aria-label="投稿入口">
+  <div class="ws-modal__box">
+    <button class="ws-modal__close" data-close="wsModalSubmit" aria-label="关闭">×</button>
+    <h3>投稿入口</h3>
+    <p>填写基础信息，官方编辑部会在五个工作日内回复。请确保内容为原创，并同意平台展示。</p>
+    <div class="ws-form-row">
+      <input type="text" id="wsSubmitName" placeholder="你的昵称或创作者名" aria-label="昵称">
+      <input type="text" id="wsSubmitTopic" placeholder="选题方向，例如：通勤白袜搭配" aria-label="选题方向">
+      <input type="text" id="wsSubmitContact" placeholder="联系方式，例如邮箱或社交账号" aria-label="联系方式">
+    </div>
+    <div class="ws-modal__actions">
+      <button class="ws-btn ws-btn--ghost" data-close="wsModalSubmit">取消</button>
+      <button class="ws-btn" id="wsSubmitSend">提交投稿</button>
+    </div>
+  </div>
+</div>
+
+<div class="ws-modal" id="wsModalCreator" role="dialog" aria-modal="true" aria-label="创作者档案">
+  <div class="ws-modal__box">
+    <button class="ws-modal__close" data-close="wsModalCreator" aria-label="关闭">×</button>
+    <h3 id="wsCreatorTitle">创作者档案</h3>
+    <p id="wsCreatorDesc">这里是创作者的简介。</p>
+    <div class="ws-modal__actions">
+      <button class="ws-btn ws-btn--ghost" data-close="wsModalCreator">关闭</button>
+      <button class="ws-btn" id="wsCreatorFollow">关注创作者</button>
+    </div>
+  </div>
+</div>
+
+<div class="ws-modal" id="wsModalReport" role="dialog" aria-modal="true" aria-label="反馈与举报">
+  <div class="ws-modal__box">
+    <button class="ws-modal__close" data-close="wsModalReport" aria-label="关闭">×</button>
+    <h3>反馈与举报</h3>
+    <p>请选择问题类型并补充说明，我们会在收到后尽快处理。</p>
+    <div class="ws-modal__list">
+      <label><input type="radio" name="wsReportType" value="内容问题" checked> 内容问题</label>
+      <label><input type="radio" name="wsReportType" value="画质或播放异常"> 画质或播放异常</label>
+      <label><input type="radio" name="wsReportType" value="侵权反馈"> 侵权反馈</label>
+      <label><input type="radio" name="wsReportType" value="其他建议"> 其他建议</label>
+    </div>
+    <textarea id="wsReportText" placeholder="请描述具体情况，便于我们定位处理" aria-label="反馈说明"></textarea>
+    <div class="ws-modal__actions">
+      <button class="ws-btn ws-btn--ghost" data-close="wsModalReport">取消</button>
+      <button class="ws-btn" id="wsReportSend">提交反馈</button>
+    </div>
+  </div>
+</div>
+
+<div class="ws-toast" id="wsToast" role="status" aria-live="polite"></div>
+<button class="ws-totop" id="wsToTop" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+
+  var toastEl = document.getElementById('wsToast');
+  var toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('is-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('is-show'); }, 2200);
+  }
+
+  /* ---------- 移动端导航 ---------- */
+  var burger = document.getElementById('wsBurger');
+  var nav = document.getElementById('wsNav');
+  burger.addEventListener('click', function(){
+    var open = nav.classList.toggle('is-open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.addEventListener('click', function(e){
+    if(e.target.tagName === 'A' && window.innerWidth <= 760){
+      nav.classList.remove('is-open');
+      burger.setAttribute('aria-expanded','false');
+    }
+  });
+
+  /* ---------- 搜索反馈 ---------- */
+  var searchInput = document.getElementById('wsSearchInput');
+  var searchBtn = document.getElementById('wsSearchBtn');
+  var searchHint = document.getElementById('wsSearchHint');
+  var searchPool = ['通勤白袜搭配','四季日常','城市漫步','衣物护理','手作收纳','治愈影像','创作者访谈','白袜日常'];
+  function runSearch(){
+    var q = searchInput.value.trim();
+    if(!q){
+      searchHint.textContent = '请输入关键词，例如「通勤」「白袜」「城市」。';
+      searchHint.classList.add('is-show');
+      return;
+    }
+    var hit = searchPool.filter(function(s){ return s.indexOf(q) !== -1 || q.indexOf(s) !== -1; });
+    if(hit.length){
+      searchHint.textContent = '找到 ' + hit.length + ' 个相关方向：' + hit.slice(0,3).join(' / ');
+      toast('已为你匹配与「' + q + '」相关的内容');
+    }else{
+      searchHint.textContent = '暂未匹配到「' + q + '」，试试「通勤」「手作」「城市」。';
+    }
+    searchHint.classList.add('is-show');
+  }
+  searchBtn.addEventListener('click', runSearch);
+  searchInput.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ e.preventDefault(); runSearch(); }
+  });
+  searchInput.addEventListener('input', function(){
+    if(!searchInput.value){ searchHint.classList.remove('is-show'); }
+  });
+
+  /* ---------- 点赞 / 收藏 / 分享 ---------- */
+  document.querySelectorAll('.ws-act').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var act = btn.getAttribute('data-act');
+      if(act === 'like'){
+        var numEl = btn.querySelector('.ws-act__num');
+        var icon = btn.querySelector('.ws-act__icon');
+        var n = parseInt(numEl.textContent, 10) || 0;
+        if(btn.classList.toggle('is-on')){
+          numEl.textContent = n + 1;
+          icon.textContent = '♥';
+          toast('已点赞，感谢你的支持');
+        }else{
+          numEl.textContent = Math.max(0, n - 1);
+          icon.textContent = '♡';
+          toast('已取消点赞');
+        }
+      }else if(act === 'fav'){
+        var on = btn.classList.toggle('is-on');
+        btn.querySelector('.ws-act__icon').textContent = on ? '★' : '☆';
+        btn.querySelector('span:last-child').textContent = on ? '已收藏' : '收藏';
+        toast(on ? '已加入收藏列表' : '已取消收藏');
+      }else if(act === 'share'){
+        if(navigator.clipboard && navigator.clipboard.writeText){
+          navigator.clipboard.writeText('白袜女生官方网站 · ' + (btn.closest('.ws-card') ? btn.closest('.ws-card').querySelector('h3').textContent : '日常影像'))
+            .then(function(){ toast('分享链接已复制'); })
+            .catch(function(){ toast('可分享至微信 / 微博 / QQ'); });
+        }else{
+          toast('可分享至微信 / 微博 / QQ');
+        }
+      }
+    });
+  });
+
+  /* ---------- 话题标签筛选 ---------- */
+  var chips = document.querySelectorAll('.ws-chip');
+  chips.forEach(function(chip){
+    chip.addEventListener('click', function(){
+      var wasOn = chip.classList.contains('is-on');
+      chips.forEach(function(c){ c.classList.remove('is-on'); });
+      if(!wasOn){ chip.classList.add('is-on'); }
+      toast(wasOn ? '已取消话题筛选' : '已切换话题：' + chip.textContent);
+    });
+  });
+
+  /* ---------- 数字滚动 ---------- */
+  var counted = false;
+  function runCount(){
+    if(counted) return;
+    counted = true;
+    document.querySelectorAll('.ws-stat b[data-count]').forEach(function(el){
+      var target = parseInt(el.getAttribute('data-count'), 10);
+      var start = 0, dur = 900, t0 = null;
+      function step(ts){
+        if(!t0) t0 = ts;
+        var p = Math.min((ts - t0) / dur, 1);
+        var val = Math.floor(start + (target - start) * (1 - Math.pow(1 - p, 3)));
+        el.textContent = val;
+        if(p < 1) requestAnimationFrame(step);
+        else el.textContent = target;
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting) runCount(); });
+    }, {threshold:.4});
+    var statsEl = document.querySelector('.ws-hero__stats');
+    if(statsEl) io.observe(statsEl);
+  }else{
+    runCount();
+  }
+
+  /* ---------- 创作者档案弹窗 ---------- */
+  var creatorModal = document.getElementById('wsModalCreator');
+  var creatorTitle = document.getElementById('wsCreatorTitle');
+  var creatorDesc = document.getElementById('wsCreatorDesc');
+  document.querySelectorAll('.ws-creator').forEach(function(card){
+    card.addEventListener('click', function(){
+      var name = card.getAttribute('data-creator');
+      var field = card.getAttribute('data-field');
+      var intro = card.querySelector('p').textContent;
+      creatorTitle.textContent = name + ' · ' + field;
+      creatorDesc.textContent = intro + ' 欢迎关注其作品更新，正式合作请联系品牌官方渠道。';
+      openModal('wsModalCreator');
+    });
+  });
+  document.getElementById('wsCreatorFollow').addEventListener('click', function(){
+    toast('已关注该创作者，后续更新会出现在你的动态中');
+    closeModal('wsModalCreator');
+  });
+
+  /* ---------- 弹窗通用 ---------- */
+  function openModal(id){
+    var m = document.getElementById(id);
+    if(m){ m.classList.add('is-open'); document.body.style.overflow = 'hidden'; }
+  }
+  function closeModal(id){
+    var m = document.getElementById(id);
+    if(m){ m.classList.remove('is-open'); document.body.style.overflow = ''; }
+  }
+  document.querySelectorAll('[data-close]').forEach(function(btn){
+    btn.addEventListener('click', function(){ closeModal(btn.getAttribute('data-close')); });
+  });
+  document.querySelectorAll('.ws-modal').forEach(function(m){
+    m.addEventListener('click', function(e){
+      if(e.target === m){ closeModal(m.id); }
+    });
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){
+      document.querySelectorAll('.ws-modal.is-open').forEach(function(m){ closeModal(m.id); });
+    }
+  });
+
+  /* ---------- 投稿入口 ---------- */
+  function bindSubmit(id){
+    var b = document.getElementById(id);
+    if(b) b.addEventListener('click', function(){ openModal('wsModalSubmit'); });
+  }
+  bindSubmit('wsSubmitBtn');
+  bindSubmit('wsSubmitBtn2');
+  document.getElementById('wsSubmitSend').addEventListener('click', function(){
+    var name = document.getElementById('wsSubmitName').value.trim();
+    var topic = document.getElementById('wsSubmitTopic').value.trim();
+    if(!name || !topic){
+      toast('请填写昵称与选题方向');
+      return;
+    }
+    document.getElementById('wsSubmitName').value = '';
+    document.getElementById('wsSubmitTopic').value = '';
+    document.getElementById('wsSubmitContact').value = '';
+    closeModal('wsModalSubmit');
+    toast('投稿已提交，编辑部会在五个工作日内回复');
+  });
+
+  /* ---------- 复制联系方式 ---------- */
+  document.getElementById('wsCopyBtn').addEventListener('click', function(){
+    var text = '白袜女生官方网站 · 品牌邮箱 brand@baiwajiang.com · 合作邮箱 partner@baiwajiang.com';
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text)
+        .then(function(){ toast('品牌联系信息已复制'); })
+        .catch(function(){
+          openModal('wsModalReport');
+          toast('可在此提交联系与反馈');
+        });
+    }else{
+      openModal('wsModalReport');
+      toast('可在此提交联系与反馈');
+    }
+  });
+
+  /* ---------- 反馈提交 & 举报入口 ---------- */
+  var reportSend = document.getElementById('wsReportSend');
+  reportSend.addEventListener('click', function(){
+    var text = document.getElementById('wsReportText').value.trim();
+    if(!text){
+      toast('请补充反馈说明');
+      return;
+    }
+    var typeEl = document.querySelector('input[name="wsReportType"]:checked');
+    var type = typeEl ? typeEl.value : '反馈';
+    document.getElementById('wsReportText').value = '';
+    closeModal('wsModalReport');
+    toast('「' + type + '」已提交，感谢你的反馈');
+  });
+
+  /* ---------- 回到顶部 ---------- */
+  var toTop = document.getElementById('wsToTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 520){ toTop.classList.add('is-show'); }
+    else{ toTop.classList.remove('is-show'); }
+  }, {passive:true});
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* ---------- 导航高亮 ---------- */
+  var navLinks = document.querySelectorAll('.ws-nav a');
+  var sections = [];
+  navLinks.forEach(function(a){
+    var id = a.getAttribute('href');
+    if(id && id.charAt(0) === '#'){
+      var el = document.querySelector(id);
+      if(el) sections.push({link:a, el:el});
+    }
+  });
+  if('IntersectionObserver' in window){
+    var navObserver = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          navLinks.forEach(function(l){ l.classList.remove('is-active'); });
+          sections.forEach(function(s){
+            if(s.el === en.target) s.link.classList.add('is-active');
+          });
+        }
+      });
+    }, {rootMargin:'-40% 0px -50% 0px', threshold:0});
+    sections.forEach(function(s){ navObserver.observe(s.el); });
+  }
+
+  /* ---------- 页面加载提示 ---------- */
+  window.addEventListener('load', function(){
+    setTimeout(function(){ toast('白袜女生官方网站已为你准备好本期精品内容'); }, 700);
+  });
+})();
+</script>
+</body>
+          </html>
